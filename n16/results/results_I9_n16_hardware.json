@@ -1,0 +1,126 @@
+[
+  {
+    "instance": "I9_websearch_hub_attempt",
+    "optimal_cut": 19313.744786198826,
+    "greedy_cut": 18568.109352431948,
+    "greedy_ratio": 0.9613935338785417,
+    "qaoa_sim": {},
+    "qaoa_hw": {
+      "1": [
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        }
+      ],
+      "2": [
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        }
+      ],
+      "3": [
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        }
+      ],
+      "4": [
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19313.744786198826,
+          "approximation_ratio": 1.0
+        }
+      ]
+    },
+    "_provenance": {
+      "source": "job_manifest/i6_i9_i10_i11_rerun_manifest.json",
+      "generated_by": "analysis/build_i6_i11_output.py",
+      "note": "Regenerated from the tagged rerun manifest; supersedes the untagged pre-rerun version of this file.",
+      "job_tags_by_depth": {
+        "1": {
+          "canonical_repeats": [
+            "I9_p1_rep1",
+            "I9_p1_rep2",
+            "I9_p1_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4js642tqs73asu5gg",
+            "dad4jurdd5gc73d6qkug",
+            "dad4k5d1ierc738kbvlg"
+          ]
+        },
+        "2": {
+          "canonical_repeats": [
+            "I9_p2_rep1",
+            "I9_p2_rep2",
+            "I9_p2_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4mnd1ierc738kc50g",
+            "dad512e42tqs73asv2pg",
+            "dad5183dd5gc73d6rj8g"
+          ]
+        },
+        "3": {
+          "canonical_repeats": [
+            "I9_p3_rep1",
+            "I9_p3_rep2",
+            "I9_p3_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad51at1ierc738kctlg",
+            "dad51de42tqs73asv3og",
+            "dad51ge42tqs73asv3ug"
+          ]
+        },
+        "4": {
+          "canonical_repeats": [
+            "I9_p4_rep1",
+            "I9_p4_rep2",
+            "I9_p4_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad51j51ierc738kcub0",
+            "dad51m51ierc738kcuj0",
+            "dad51p3dd5gc73d6rkfg"
+          ]
+        }
+      }
+    }
+  }
+]

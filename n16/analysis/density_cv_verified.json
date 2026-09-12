@@ -1,0 +1,24 @@
+{
+  "density": {
+    "I1": 0.6416666666666667,
+    "I2": 0.6416666666666667,
+    "I3": 0.6416666666666667,
+    "I4": 0.6416666666666667,
+    "I5": 0.6416666666666667
+  },
+  "cv": {
+    "I1": 0.34392126312946575,
+    "I2": 0.3439212631294658,
+    "I3": 0.34392126312946586,
+    "I4": 0.3439212631294658,
+    "I5": 0.3380342076290584
+  },
+  "n_edges": {
+    "I1": 77,
+    "I2": 77,
+    "I3": 77,
+    "I4": 77,
+    "I5": 77
+  },
+  "correction_note": "Prior version incorrectly included 11 nonzero diagonal (self-loop) entries in the cost matrix, inflating I1-I4 edge count from 77 to 82. Self-loops never participate in any Max-Cut partition and are correctly excluded everywhere else in this codebase (compute_cut_value only sums i<j). This version uses off-diagonal upper-triangle only, matching that convention exactly."
+}

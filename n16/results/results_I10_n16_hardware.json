@@ -1,0 +1,47 @@
+[
+  {
+    "instance": "I10_two_hubs",
+    "optimal_cut": 19910.53015426533,
+    "greedy_cut": 18105.427627458255,
+    "greedy_ratio": 0.9093393037341914,
+    "qaoa_sim": {},
+    "qaoa_hw": {
+      "2": [
+        {
+          "best_cut": 19910.53015426533,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19910.53015426533,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19910.53015426533,
+          "approximation_ratio": 1.0
+        }
+      ]
+    },
+    "_provenance": {
+      "source": "job_manifest/i6_i9_i10_i11_rerun_manifest.json",
+      "generated_by": "analysis/build_i6_i11_output.py",
+      "note": "Regenerated from the tagged rerun manifest; supersedes the untagged pre-rerun version of this file.",
+      "job_tags_by_depth": {
+        "2": {
+          "canonical_repeats": [
+            "I10_p2_rep1",
+            "I10_p2_rep2",
+            "I10_p2_rep3"
+          ],
+          "excluded_non_repeat_jobs": [
+            "I10_p2_disambig"
+          ],
+          "job_ids": [
+            "dadjisrdd5gc73d7dub0",
+            "dadjk1rdd5gc73d7dvvg",
+            "dadjkblnj4cs73advplg"
+          ]
+        }
+      }
+    }
+  }
+]

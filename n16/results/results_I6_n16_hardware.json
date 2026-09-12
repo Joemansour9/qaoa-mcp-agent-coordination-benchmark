@@ -1,0 +1,126 @@
+[
+  {
+    "instance": "I6_topology_shifted",
+    "optimal_cut": 32310.196559262615,
+    "greedy_cut": 30493.516928532383,
+    "greedy_ratio": 0.943773798237404,
+    "qaoa_sim": {},
+    "qaoa_hw": {
+      "1": [
+        {
+          "best_cut": 32310.196559262615,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 32310.196559262615,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 32288.6467424128,
+          "approximation_ratio": 0.9993330335576792
+        }
+      ],
+      "2": [
+        {
+          "best_cut": 32310.196559262615,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 32310.196559262615,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 31506.19534204943,
+          "approximation_ratio": 0.9751161768471911
+        }
+      ],
+      "3": [
+        {
+          "best_cut": 32310.196559262615,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 31486.42827222558,
+          "approximation_ratio": 0.9745043863931283
+        },
+        {
+          "best_cut": 32310.196559262615,
+          "approximation_ratio": 1.0
+        }
+      ],
+      "4": [
+        {
+          "best_cut": 32288.6467424128,
+          "approximation_ratio": 0.9993330335576792
+        },
+        {
+          "best_cut": 32310.196559262615,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 32288.6467424128,
+          "approximation_ratio": 0.9993330335576792
+        }
+      ]
+    },
+    "_provenance": {
+      "source": "job_manifest/i6_i9_i10_i11_rerun_manifest.json",
+      "generated_by": "analysis/build_i6_i11_output.py",
+      "note": "Regenerated from the tagged rerun manifest; supersedes the untagged pre-rerun version of this file.",
+      "job_tags_by_depth": {
+        "1": {
+          "canonical_repeats": [
+            "I6_p1_rep1",
+            "I6_p1_rep2",
+            "I6_p1_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4a9t1ierc738kb8m0",
+            "dad4ac642tqs73astfr0",
+            "dad4aeu42tqs73astfug"
+          ]
+        },
+        "2": {
+          "canonical_repeats": [
+            "I6_p2_rep1",
+            "I6_p2_rep2",
+            "I6_p2_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4ajdnj4cs73adbr5g",
+            "dad4amtnj4cs73adbrag",
+            "dad4aptnj4cs73adbrhg"
+          ]
+        },
+        "3": {
+          "canonical_repeats": [
+            "I6_p3_rep1",
+            "I6_p3_rep2",
+            "I6_p3_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4astnj4cs73adbrq0",
+            "dad4b6642tqs73asth9g",
+            "dad4bi5nj4cs73adbt5g"
+          ]
+        },
+        "4": {
+          "canonical_repeats": [
+            "I6_p4_rep1",
+            "I6_p4_rep2",
+            "I6_p4_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4blbdd5gc73d6q1mg",
+            "dad4bo3dd5gc73d6q1rg",
+            "dad4brdnj4cs73adbtm0"
+          ]
+        }
+      }
+    }
+  }
+]

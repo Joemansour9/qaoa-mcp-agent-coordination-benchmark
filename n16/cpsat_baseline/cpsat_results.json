@@ -1,0 +1,90 @@
+[
+  {
+    "instance": "I1",
+    "c_star": 34158.70542921973,
+    "cpsat_value": 34158.705428,
+    "r": 0.9999999999642923,
+    "solve_time_s": 0.29680681228637695,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I2",
+    "c_star": 20042.494112764583,
+    "cpsat_value": 20042.494113,
+    "r": 1.000000000011746,
+    "solve_time_s": 0.23453927040100098,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I3",
+    "c_star": 57514.08877729828,
+    "cpsat_value": 57514.088781,
+    "r": 1.0000000000643618,
+    "solve_time_s": 0.23101043701171875,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I4",
+    "c_star": 34207.65817970167,
+    "cpsat_value": 34207.658178,
+    "r": 0.9999999999502547,
+    "solve_time_s": 0.2191171646118164,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I5",
+    "c_star": 35788.53551968903,
+    "cpsat_value": 35788.535518,
+    "r": 0.9999999999528052,
+    "solve_time_s": 0.17648100852966309,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I6",
+    "c_star": 32310.196559262615,
+    "cpsat_value": 32310.196559,
+    "r": 0.9999999999918721,
+    "solve_time_s": 0.14017558097839355,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I7",
+    "c_star": 22654.8150696294,
+    "cpsat_value": 22654.815069,
+    "r": 0.9999999999722179,
+    "solve_time_s": 0.028231143951416016,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I8",
+    "c_star": 25658.04154039808,
+    "cpsat_value": 25658.041541,
+    "r": 1.0000000000234592,
+    "solve_time_s": 0.028676748275756836,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I9",
+    "c_star": 19313.744786198826,
+    "cpsat_value": 19313.744786,
+    "r": 0.9999999999897055,
+    "solve_time_s": 0.026412010192871094,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I10",
+    "c_star": 19910.53015426533,
+    "cpsat_value": 19910.530153,
+    "r": 0.9999999999364493,
+    "solve_time_s": 0.028278589248657227,
+    "status": "OPTIMAL"
+  },
+  {
+    "instance": "I11",
+    "c_star": 19271.769924638742,
+    "cpsat_value": 19271.769922,
+    "r": 0.9999999998630773,
+    "solve_time_s": 0.025173664093017578,
+    "status": "OPTIMAL"
+  }
+]

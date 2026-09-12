@@ -1,0 +1,126 @@
+[
+  {
+    "instance": "I8_vectorsearch_codeexec_weighted",
+    "optimal_cut": 25658.04154039808,
+    "greedy_cut": 23106.01463282152,
+    "greedy_ratio": 0.9005369562771015,
+    "qaoa_sim": {},
+    "qaoa_hw": {
+      "1": [
+        {
+          "best_cut": 24992.079703839056,
+          "approximation_ratio": 0.9740447128238342
+        },
+        {
+          "best_cut": 25241.73354593943,
+          "approximation_ratio": 0.9837747556140175
+        },
+        {
+          "best_cut": 25241.73354593943,
+          "approximation_ratio": 0.9837747556140175
+        }
+      ],
+      "2": [
+        {
+          "best_cut": 25241.73354593943,
+          "approximation_ratio": 0.9837747556140175
+        },
+        {
+          "best_cut": 25408.38769829771,
+          "approximation_ratio": 0.9902699572098168
+        },
+        {
+          "best_cut": 25241.73354593943,
+          "approximation_ratio": 0.9837747556140175
+        }
+      ],
+      "3": [
+        {
+          "best_cut": 25408.38769829771,
+          "approximation_ratio": 0.9902699572098168
+        },
+        {
+          "best_cut": 25408.38769829771,
+          "approximation_ratio": 0.9902699572098168
+        },
+        {
+          "best_cut": 25408.38769829771,
+          "approximation_ratio": 0.9902699572098168
+        }
+      ],
+      "4": [
+        {
+          "best_cut": 24992.079703839056,
+          "approximation_ratio": 0.9740447128238342
+        },
+        {
+          "best_cut": 25658.04154039808,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 25658.04154039808,
+          "approximation_ratio": 1.0
+        }
+      ]
+    },
+    "_provenance": {
+      "source": "job_manifest/i6_i9_i10_i11_rerun_manifest.json",
+      "generated_by": "analysis/build_i6_i11_output.py",
+      "note": "Regenerated from the tagged rerun manifest; supersedes the untagged pre-rerun version of this file.",
+      "job_tags_by_depth": {
+        "1": {
+          "canonical_repeats": [
+            "I8_p1_rep1",
+            "I8_p1_rep2",
+            "I8_p1_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4im51ierc738kbs80",
+            "dad4iot1ierc738kbsdg",
+            "dad4irt1ierc738kbsmg"
+          ]
+        },
+        "2": {
+          "canonical_repeats": [
+            "I8_p2_rep1",
+            "I8_p2_rep2",
+            "I8_p2_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4j0642tqs73asu3dg",
+            "dad4j2tnj4cs73adcfc0",
+            "dad4j7lnj4cs73adcfn0"
+          ]
+        },
+        "3": {
+          "canonical_repeats": [
+            "I8_p3_rep1",
+            "I8_p3_rep2",
+            "I8_p3_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4jae42tqs73asu48g",
+            "dad4jed1ierc738kbtv0",
+            "dad4jgu42tqs73asu4og"
+          ]
+        },
+        "4": {
+          "canonical_repeats": [
+            "I8_p4_rep1",
+            "I8_p4_rep2",
+            "I8_p4_rep3"
+          ],
+          "excluded_non_repeat_jobs": [],
+          "job_ids": [
+            "dad4jjjdd5gc73d6qk50",
+            "dad4jmd1ierc738kbugg",
+            "dad4jpbdd5gc73d6qki0"
+          ]
+        }
+      }
+    }
+  }
+]

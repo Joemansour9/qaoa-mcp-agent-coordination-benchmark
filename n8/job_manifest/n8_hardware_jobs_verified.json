@@ -1,0 +1,706 @@
+{
+  "_meta": {
+    "description": "Twenty n=8 QAOA hardware jobs on ibm_marrakesh, pulled directly from IBM Quantum account job history (account CRN: crn:v1:bluemix:public:quantum-computing:us-east:a/[REDACTED-ACCOUNT-ID]:[REDACTED-INSTANCE-ID]::) on 2026-09-11 via qiskit-ibm-runtime, using the default-ibm-cloud saved credential. These jobs predate the job-level tagging protocol adopted for n=16 (Section 4.4); none carry a tag, so individual (instance, depth) attribution is not recoverable from job metadata alone. Account CRN redacted for privacy; see reproducibility_package/README.md.",
+    "window": "2026-06-04T19:26:44.288Z - 2026-06-04T19:32:10.800Z (all 20 jobs submitted within a single 6-minute run)",
+    "backend": "ibm_marrakesh",
+    "shots_per_job": 8192,
+    "num_clbits_per_job": 8,
+    "total_jobs_in_source_window": 129,
+    "note_on_129_vs_20": "The account history window 2026-06-04T19:26-2026-06-06T02:24 contains 129 total jobs; only these 20 are 8-qubit (num_clbits=8) circuits. The remaining 109 are 16-qubit circuits from early, untagged n=16 exploration predating the I1-I11 protocol and are out of scope for this file.",
+    "gate_size_clustering": {
+      "description": "Gate counts (post-transpilation circuit size) cluster into four groups of exactly five jobs, consistent with a systematic 5-instance x 4-depth sweep (p=1..4). Depth-group numbering (1=lowest gate count .. 4=highest) is inferred from QAOA gate-count scaling with circuit depth p, not confirmed via tags -- individual instance identity within each depth group is not recoverable (see attribution_note).",
+      "group_1_gate_sizes": [
+        378,
+        390,
+        394,
+        400,
+        429
+      ],
+      "group_2_gate_sizes": [
+        837,
+        841,
+        846,
+        846,
+        949
+      ],
+      "group_3_gate_sizes": [
+        1256,
+        1270,
+        1281,
+        1319,
+        1403
+      ],
+      "group_4_gate_sizes": [
+        1741,
+        1747,
+        1759,
+        1790,
+        1802
+      ]
+    },
+    "attribution_note": "Individual (instance, depth) attribution is not recoverable, and not merely because jobs are untagged: at n=8 the outcome space (2^8=256 possible bitstrings) is small relative to the 8192-shot budget (~32x), so the best-observed-cut statistic (max cut value across all distinct measured outcomes, matching evaluate_circuit_hardware in qaoa_qap_experiment.py) saturates to each candidate instance's own C* for every one of the 20 jobs against all five instances (I1-I5) simultaneously -- confirmed by direct computation, not assumed. This means job results cannot discriminate which specific instance produced a given job, but it does mean every real job in this batch is independently consistent with r=1.000 under any candidate assignment, supporting Table tab:results8's HW column at the aggregate level.",
+    "claim_backed": "Table tab:results8 HW column (r=1.000 uniformly, Delta r=0.000) and the paper_draft.tex Section 4.4 sentence on n=8 aggregate structural confirmation."
+  },
+  "jobs": [
+    {
+      "job_id": "d8gt2t5v8cos73f3mjc0",
+      "created": "2026-06-04T19:26:44.288Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 390,
+      "gate_depth": 196,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 1
+    },
+    {
+      "job_id": "d8gt30lv8cos73f3mjg0",
+      "created": "2026-06-04T19:26:58.387Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 846,
+      "gate_depth": 411,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 2
+    },
+    {
+      "job_id": "d8gt355v8cos73f3mjm0",
+      "created": "2026-06-04T19:27:16.896Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1270,
+      "gate_depth": 581,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 3
+    },
+    {
+      "job_id": "d8gt3a5v8cos73f3mjrg",
+      "created": "2026-06-04T19:27:36.344Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1790,
+      "gate_depth": 844,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 4
+    },
+    {
+      "job_id": "d8gt3d5v8cos73f3mjv0",
+      "created": "2026-06-04T19:27:48.948Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 378,
+      "gate_depth": 202,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 1
+    },
+    {
+      "job_id": "d8gt3h5v8cos73f3mk3g",
+      "created": "2026-06-04T19:28:04.696Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 841,
+      "gate_depth": 402,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 2
+    },
+    {
+      "job_id": "d8gt3ldv8cos73f3mk8g",
+      "created": "2026-06-04T19:28:21.966Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1281,
+      "gate_depth": 636,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 3
+    },
+    {
+      "job_id": "d8gt3qs2upec739kakmg",
+      "created": "2026-06-04T19:28:44.083Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1759,
+      "gate_depth": 819,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 4
+    },
+    {
+      "job_id": "d8gt3uc2upec739kakrg",
+      "created": "2026-06-04T19:28:57.538Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 400,
+      "gate_depth": 207,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 1
+    },
+    {
+      "job_id": "d8gt42c2upec739kal10",
+      "created": "2026-06-04T19:29:13.426Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 837,
+      "gate_depth": 405,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 2
+    },
+    {
+      "job_id": "d8gt46lv8cos73f3mkrg",
+      "created": "2026-06-04T19:29:30.948Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1256,
+      "gate_depth": 605,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 3
+    },
+    {
+      "job_id": "d8gt4bs2upec739kalbg",
+      "created": "2026-06-04T19:29:51.529Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1747,
+      "gate_depth": 815,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 4
+    },
+    {
+      "job_id": "d8gt4f42upec739kalfg",
+      "created": "2026-06-04T19:30:05.037Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 394,
+      "gate_depth": 206,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 1
+    },
+    {
+      "job_id": "d8gt4jdv8cos73f3ml80",
+      "created": "2026-06-04T19:30:21.577Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 846,
+      "gate_depth": 411,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 2
+    },
+    {
+      "job_id": "d8gt4nk2upec739kalog",
+      "created": "2026-06-04T19:30:38.560Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1319,
+      "gate_depth": 598,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 3
+    },
+    {
+      "job_id": "d8gt4tk2upec739kam30",
+      "created": "2026-06-04T19:31:02.246Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1741,
+      "gate_depth": 812,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 4
+    },
+    {
+      "job_id": "d8gt51dv8cos73f3mlq0",
+      "created": "2026-06-04T19:31:17.954Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 429,
+      "gate_depth": 177,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 1
+    },
+    {
+      "job_id": "d8gt551e8nrc73bgg37g",
+      "created": "2026-06-04T19:31:32.689Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 949,
+      "gate_depth": 380,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 2
+    },
+    {
+      "job_id": "d8gt59dv8cos73f3mm3g",
+      "created": "2026-06-04T19:31:49.931Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1403,
+      "gate_depth": 650,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 3
+    },
+    {
+      "job_id": "d8gt5elv8cos73f3mmb0",
+      "created": "2026-06-04T19:32:10.800Z",
+      "backend": "ibm_marrakesh",
+      "status": "DONE",
+      "num_clbits": 8,
+      "gate_size": 1802,
+      "gate_depth": 863,
+      "total_shots": 8192,
+      "result_by_candidate_instance": {
+        "I1_full_graph": {
+          "best_cut": 9443.8278,
+          "ratio_vs_C_star": 1.0
+        },
+        "I2_simple_tasks": {
+          "best_cut": 5541.131,
+          "ratio_vs_C_star": 1.0
+        },
+        "I3_complex_tasks": {
+          "best_cut": 15900.8704,
+          "ratio_vs_C_star": 1.0
+        },
+        "I4_latency_reweighted": {
+          "best_cut": 9683.4712,
+          "ratio_vs_C_star": 1.0
+        },
+        "I5_random_baseline": {
+          "best_cut": 10251.8027,
+          "ratio_vs_C_star": 1.0
+        }
+      },
+      "inferred_depth_group": 4
+    }
+  ]
+}
