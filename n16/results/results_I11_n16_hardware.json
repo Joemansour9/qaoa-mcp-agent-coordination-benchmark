@@ -1,0 +1,47 @@
+[
+  {
+    "instance": "I11_sequential_chain",
+    "optimal_cut": 19271.769924638742,
+    "greedy_cut": 17520.915824184456,
+    "greedy_ratio": 0.9091492837813595,
+    "qaoa_sim": {},
+    "qaoa_hw": {
+      "2": [
+        {
+          "best_cut": 19271.769924638742,
+          "approximation_ratio": 1.0
+        },
+        {
+          "best_cut": 19044.926174638742,
+          "approximation_ratio": 0.988229220726116
+        },
+        {
+          "best_cut": 18482.466512534906,
+          "approximation_ratio": 0.9590435432142265
+        }
+      ]
+    },
+    "_provenance": {
+      "source": "job_manifest/i6_i9_i10_i11_rerun_manifest.json",
+      "generated_by": "analysis/build_i6_i11_output.py",
+      "note": "Regenerated from the tagged rerun manifest; supersedes the untagged pre-rerun version of this file.",
+      "job_tags_by_depth": {
+        "2": {
+          "canonical_repeats": [
+            "I11_p2_rep1",
+            "I11_p2_rep2",
+            "I11_p2_rep3"
+          ],
+          "excluded_non_repeat_jobs": [
+            "I11_p2_disambig"
+          ],
+          "job_ids": [
+            "dadjkgjdd5gc73d7e0g0",
+            "dadjkrjdd5gc73d7e0rg",
+            "dadjl251ierc738kv870"
+          ]
+        }
+      }
+    }
+  }
+]

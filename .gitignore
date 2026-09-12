@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.venv/
+
+# Large supplementary file excluded from the public repo (see README:
+# supplementary/audit_trail/ note) — kept locally, not committed.
+supplementary/audit_trail/raw_account_history_I6_I11_window.json

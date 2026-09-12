@@ -1,0 +1,971 @@
+{
+  "protocol": "I1-I4 hardware re-run, p=1-4, 3 repeats, tagged",
+  "backend": "ibm_marrakesh",
+  "shots": 8192,
+  "jobs": [
+    {
+      "tag": "I1_p2_rep1",
+      "instance": "I1",
+      "depth": 2,
+      "repeat": 1,
+      "job_id": "d9p9btspcc1s73a7cbeg",
+      "submitted_at": "2026-08-05T01:46:32Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p2_rep1"
+      ],
+      "completed_at": "2026-08-05T01:46:41Z",
+      "result": {
+        "best_cut": 34158.70542921973,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p2_rep2",
+      "instance": "I1",
+      "depth": 2,
+      "repeat": 2,
+      "job_id": "d9p9bud7skus73ckln50",
+      "submitted_at": "2026-08-05T01:46:33Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p2_rep2"
+      ],
+      "completed_at": "2026-08-05T01:46:43Z",
+      "result": {
+        "best_cut": 34158.70542921973,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p2_rep3",
+      "instance": "I1",
+      "depth": 2,
+      "repeat": 3,
+      "job_id": "d9p9but7skus73ckln60",
+      "submitted_at": "2026-08-05T01:46:35Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p2_rep3"
+      ],
+      "completed_at": "2026-08-05T01:46:47Z",
+      "result": {
+        "best_cut": 33671.88683653857,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 0.9857483301382749,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p2_rep1",
+      "instance": "I2",
+      "depth": 2,
+      "repeat": 1,
+      "job_id": "d9p9bv57skus73ckln6g",
+      "submitted_at": "2026-08-05T01:46:37Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p2_rep1"
+      ],
+      "completed_at": "2026-08-05T01:46:50Z",
+      "result": {
+        "best_cut": 19620.04744607755,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 0.9789224502544328,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p2_rep2",
+      "instance": "I2",
+      "depth": 2,
+      "repeat": 2,
+      "job_id": "d9p9bvl7skus73ckln7g",
+      "submitted_at": "2026-08-05T01:46:38Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p2_rep2"
+      ],
+      "completed_at": "2026-08-05T01:46:53Z",
+      "result": {
+        "best_cut": 20042.494112764583,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p2_rep3",
+      "instance": "I2",
+      "depth": 2,
+      "repeat": 3,
+      "job_id": "d9p9c03bvhrs73a2b4sg",
+      "submitted_at": "2026-08-05T01:46:40Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p2_rep3"
+      ],
+      "completed_at": "2026-08-05T01:46:57Z",
+      "result": {
+        "best_cut": 20042.494112764583,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p2_rep1",
+      "instance": "I3",
+      "depth": 2,
+      "repeat": 1,
+      "job_id": "d9p9c4jbvhrs73a2b520",
+      "submitted_at": "2026-08-05T01:46:58Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p2_rep1"
+      ],
+      "completed_at": "2026-08-05T01:47:07Z",
+      "result": {
+        "best_cut": 56965.78100206051,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 0.99046654851195,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p2_rep2",
+      "instance": "I3",
+      "depth": 2,
+      "repeat": 2,
+      "job_id": "d9p9c557skus73cklnd0",
+      "submitted_at": "2026-08-05T01:47:00Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p2_rep2"
+      ],
+      "completed_at": "2026-08-05T01:47:09Z",
+      "result": {
+        "best_cut": 57514.08877729828,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p2_rep3",
+      "instance": "I3",
+      "depth": 2,
+      "repeat": 3,
+      "job_id": "d9p9c5cpcc1s73a7cbn0",
+      "submitted_at": "2026-08-05T01:47:01Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p2_rep3"
+      ],
+      "completed_at": "2026-08-05T01:47:13Z",
+      "result": {
+        "best_cut": 56965.78100206051,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 0.99046654851195,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p2_rep1",
+      "instance": "I4",
+      "depth": 2,
+      "repeat": 1,
+      "job_id": "d9p9c5spcc1s73a7cbog",
+      "submitted_at": "2026-08-05T01:47:03Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p2_rep1"
+      ],
+      "completed_at": "2026-08-05T01:47:16Z",
+      "result": {
+        "best_cut": 34207.65817970167,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p2_rep2",
+      "instance": "I4",
+      "depth": 2,
+      "repeat": 2,
+      "job_id": "d9p9c64pcc1s73a7cbp0",
+      "submitted_at": "2026-08-05T01:47:04Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p2_rep2"
+      ],
+      "completed_at": "2026-08-05T01:47:19Z",
+      "result": {
+        "best_cut": 34207.65817970167,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p2_rep3",
+      "instance": "I4",
+      "depth": 2,
+      "repeat": 3,
+      "job_id": "d9p9c6kpcc1s73a7cbqg",
+      "submitted_at": "2026-08-05T01:47:06Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p2_rep3"
+      ],
+      "completed_at": "2026-08-05T01:47:23Z",
+      "result": {
+        "best_cut": 34207.65817970167,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p1_rep1",
+      "instance": "I1",
+      "depth": 1,
+      "repeat": 1,
+      "job_id": "d9p9cb4pcc1s73a7cbvg",
+      "submitted_at": "2026-08-05T01:47:24Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p1_rep1"
+      ],
+      "completed_at": "2026-08-05T01:47:33Z",
+      "result": {
+        "best_cut": 33833.05506811567,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 0.9904665485119499,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p1_rep2",
+      "instance": "I1",
+      "depth": 1,
+      "repeat": 2,
+      "job_id": "d9p9cbl7skus73cklnk0",
+      "submitted_at": "2026-08-05T01:47:26Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p1_rep2"
+      ],
+      "completed_at": "2026-08-05T01:47:35Z",
+      "result": {
+        "best_cut": 33657.55885334246,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 0.9853288767949449,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p1_rep3",
+      "instance": "I1",
+      "depth": 1,
+      "repeat": 3,
+      "job_id": "d9p9cbu28h6s739r11ng",
+      "submitted_at": "2026-08-05T01:47:27Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p1_rep3"
+      ],
+      "completed_at": "2026-08-05T01:47:38Z",
+      "result": {
+        "best_cut": 34158.70542921973,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p1_rep1",
+      "instance": "I2",
+      "depth": 1,
+      "repeat": 1,
+      "job_id": "d9p9ccd7skus73cklnm0",
+      "submitted_at": "2026-08-05T01:47:29Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p1_rep1"
+      ],
+      "completed_at": "2026-08-05T01:47:42Z",
+      "result": {
+        "best_cut": 19531.744488792767,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 0.9745166633903846,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p1_rep2",
+      "instance": "I2",
+      "depth": 1,
+      "repeat": 2,
+      "job_id": "d9p9cckpcc1s73a7cc1g",
+      "submitted_at": "2026-08-05T01:47:30Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p1_rep2"
+      ],
+      "completed_at": "2026-08-05T01:47:45Z",
+      "result": {
+        "best_cut": 20042.494112764583,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p1_rep3",
+      "instance": "I2",
+      "depth": 1,
+      "repeat": 3,
+      "job_id": "d9p9cd57skus73cklnn0",
+      "submitted_at": "2026-08-05T01:47:32Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p1_rep3"
+      ],
+      "completed_at": "2026-08-05T01:47:49Z",
+      "result": {
+        "best_cut": 19748.448212299623,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 0.985328876794945,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p1_rep1",
+      "instance": "I3",
+      "depth": 1,
+      "repeat": 1,
+      "job_id": "d9p9chkpcc1s73a7cc70",
+      "submitted_at": "2026-08-05T01:47:51Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p1_rep1"
+      ],
+      "completed_at": "2026-08-05T01:47:59Z",
+      "result": {
+        "best_cut": 57514.08877729828,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p1_rep2",
+      "instance": "I3",
+      "depth": 1,
+      "repeat": 2,
+      "job_id": "d9p9ci628h6s739r11u0",
+      "submitted_at": "2026-08-05T01:47:52Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p1_rep2"
+      ],
+      "completed_at": "2026-08-05T01:48:01Z",
+      "result": {
+        "best_cut": 56694.41697164629,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 0.9857483301382751,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p1_rep3",
+      "instance": "I3",
+      "depth": 1,
+      "repeat": 3,
+      "job_id": "d9p9cil7skus73cklntg",
+      "submitted_at": "2026-08-05T01:47:54Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p1_rep3"
+      ],
+      "completed_at": "2026-08-05T01:53:11Z",
+      "result": {
+        "best_cut": 57105.937667687875,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 0.9929034586431367,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p1_rep1",
+      "instance": "I4",
+      "depth": 1,
+      "repeat": 1,
+      "job_id": "d9p9cispcc1s73a7cc90",
+      "submitted_at": "2026-08-05T01:47:55Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p1_rep1"
+      ],
+      "completed_at": "2026-08-05T01:53:35Z",
+      "result": {
+        "best_cut": 33879.278727136036,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 0.9904004111932898,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p1_rep2",
+      "instance": "I4",
+      "depth": 1,
+      "repeat": 2,
+      "job_id": "d9p9cjcpcc1s73a7cca0",
+      "submitted_at": "2026-08-05T01:47:57Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p1_rep2"
+      ],
+      "completed_at": "2026-08-05T01:53:38Z",
+      "result": {
+        "best_cut": 34116.33331035955,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 0.9973302799957142,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p1_rep3",
+      "instance": "I4",
+      "depth": 1,
+      "repeat": 3,
+      "job_id": "d9p9cjl7skus73cklnug",
+      "submitted_at": "2026-08-05T01:47:58Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p1_rep3"
+      ],
+      "completed_at": "2026-08-05T01:53:43Z",
+      "result": {
+        "best_cut": 34116.33331035955,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 0.9973302799957142,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p3_rep1",
+      "instance": "I1",
+      "depth": 3,
+      "repeat": 1,
+      "job_id": "d9p9fa3bvhrs73a2b8dg",
+      "submitted_at": "2026-08-05T01:53:45Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p3_rep1"
+      ],
+      "completed_at": "2026-08-05T01:54:02Z",
+      "result": {
+        "best_cut": 33342.32498847759,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 0.9761003694231398,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p3_rep2",
+      "instance": "I1",
+      "depth": 3,
+      "repeat": 2,
+      "job_id": "d9p9fal7skus73cklqr0",
+      "submitted_at": "2026-08-05T01:53:46Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p3_rep2"
+      ],
+      "completed_at": "2026-08-05T01:54:06Z",
+      "result": {
+        "best_cut": 33438.72361629117,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 0.9789224502544328,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p3_rep3",
+      "instance": "I1",
+      "depth": 3,
+      "repeat": 3,
+      "job_id": "d9p9fb57skus73cklqs0",
+      "submitted_at": "2026-08-05T01:53:48Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p3_rep3"
+      ],
+      "completed_at": "2026-08-05T01:54:09Z",
+      "result": {
+        "best_cut": 34158.70542921973,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p3_rep1",
+      "instance": "I2",
+      "depth": 3,
+      "repeat": 1,
+      "job_id": "d9p9fbe28h6s739r14t0",
+      "submitted_at": "2026-08-05T01:53:49Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p3_rep1"
+      ],
+      "completed_at": "2026-08-05T01:54:13Z",
+      "result": {
+        "best_cut": 19851.419967441012,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 0.9904665485119498,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p3_rep2",
+      "instance": "I2",
+      "depth": 3,
+      "repeat": 2,
+      "job_id": "d9p9fbu28h6s739r14ug",
+      "submitted_at": "2026-08-05T01:53:51Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p3_rep2"
+      ],
+      "completed_at": "2026-08-05T01:54:17Z",
+      "result": {
+        "best_cut": 19900.26172439866,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 0.9929034586431367,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p3_rep3",
+      "instance": "I2",
+      "depth": 3,
+      "repeat": 3,
+      "job_id": "d9p9fc57skus73cklqu0",
+      "submitted_at": "2026-08-05T01:53:53Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p3_rep3"
+      ],
+      "completed_at": "2026-08-05T01:54:21Z",
+      "result": {
+        "best_cut": 19851.419967441012,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 0.9904665485119498,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p3_rep1",
+      "instance": "I3",
+      "depth": 3,
+      "repeat": 1,
+      "job_id": "d9p9fjkpcc1s73a7cfe0",
+      "submitted_at": "2026-08-05T01:54:23Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p3_rep1"
+      ],
+      "completed_at": "2026-08-05T01:54:30Z",
+      "result": {
+        "best_cut": 57514.08877729828,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p3_rep2",
+      "instance": "I3",
+      "depth": 3,
+      "repeat": 2,
+      "job_id": "d9p9fk3bvhrs73a2b8pg",
+      "submitted_at": "2026-08-05T01:54:24Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p3_rep2"
+      ],
+      "completed_at": "2026-08-05T01:54:34Z",
+      "result": {
+        "best_cut": 56965.78100206051,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 0.99046654851195,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p3_rep3",
+      "instance": "I3",
+      "depth": 3,
+      "repeat": 3,
+      "job_id": "d9p9fn628h6s739r15bg",
+      "submitted_at": "2026-08-05T01:54:36Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p3_rep3"
+      ],
+      "completed_at": "2026-08-05T01:54:43Z",
+      "result": {
+        "best_cut": 56670.29249482008,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 0.9853288767949452,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p3_rep1",
+      "instance": "I4",
+      "depth": 3,
+      "repeat": 1,
+      "job_id": "d9p9fnjbvhrs73a2b8u0",
+      "submitted_at": "2026-08-05T01:54:38Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p3_rep1"
+      ],
+      "completed_at": "2026-08-05T01:54:47Z",
+      "result": {
+        "best_cut": 34207.65817970167,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p3_rep2",
+      "instance": "I4",
+      "depth": 3,
+      "repeat": 2,
+      "job_id": "d9p9fqd7skus73cklrcg",
+      "submitted_at": "2026-08-05T01:54:49Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p3_rep2"
+      ],
+      "completed_at": "2026-08-05T01:55:20Z",
+      "result": {
+        "best_cut": 34207.65817970167,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p3_rep3",
+      "instance": "I4",
+      "depth": 3,
+      "repeat": 3,
+      "job_id": "d9p9fqjbvhrs73a2b94g",
+      "submitted_at": "2026-08-05T01:54:51Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p3_rep3"
+      ],
+      "completed_at": "2026-08-05T01:55:23Z",
+      "result": {
+        "best_cut": 34116.33331035955,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 0.9973302799957142,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p4_rep1",
+      "instance": "I1",
+      "depth": 4,
+      "repeat": 1,
+      "job_id": "d9p9g3d7skus73cklrng",
+      "submitted_at": "2026-08-05T01:55:25Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p4_rep1"
+      ],
+      "completed_at": "2026-08-05T01:55:33Z",
+      "result": {
+        "best_cut": 33833.05506811567,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 0.9904665485119499,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p4_rep2",
+      "instance": "I1",
+      "depth": 4,
+      "repeat": 2,
+      "job_id": "d9p9g3jbvhrs73a2b9fg",
+      "submitted_at": "2026-08-05T01:55:26Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p4_rep2"
+      ],
+      "completed_at": "2026-08-05T01:55:37Z",
+      "result": {
+        "best_cut": 33650.03810668099,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 0.9851087060780818,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I1_p4_rep3",
+      "instance": "I1",
+      "depth": 4,
+      "repeat": 3,
+      "job_id": "d9p9g6u28h6s739r15tg",
+      "submitted_at": "2026-08-05T01:55:39Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I1_p4_rep3"
+      ],
+      "completed_at": "2026-08-05T01:55:47Z",
+      "result": {
+        "best_cut": 33671.88683653857,
+        "opt_cut": 34158.70542921973,
+        "approximation_ratio": 0.9857483301382749,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p4_rep1",
+      "instance": "I2",
+      "depth": 4,
+      "repeat": 1,
+      "job_id": "d9p9g73bvhrs73a2b9l0",
+      "submitted_at": "2026-08-05T01:55:40Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p4_rep1"
+      ],
+      "completed_at": "2026-08-05T01:55:51Z",
+      "result": {
+        "best_cut": 19900.26172439866,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 0.9929034586431367,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p4_rep2",
+      "instance": "I2",
+      "depth": 4,
+      "repeat": 2,
+      "job_id": "d9p9gacpcc1s73a7cg90",
+      "submitted_at": "2026-08-05T01:55:53Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p4_rep2"
+      ],
+      "completed_at": "2026-08-05T01:56:00Z",
+      "result": {
+        "best_cut": 19531.744488792767,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 0.9745166633903846,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I2_p4_rep3",
+      "instance": "I2",
+      "depth": 4,
+      "repeat": 3,
+      "job_id": "d9p9gam28h6s739r162g",
+      "submitted_at": "2026-08-05T01:55:54Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I2_p4_rep3"
+      ],
+      "completed_at": "2026-08-05T01:56:04Z",
+      "result": {
+        "best_cut": 19499.110989854064,
+        "opt_cut": 20042.494112764583,
+        "approximation_ratio": 0.9728884479220352,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p4_rep1",
+      "instance": "I3",
+      "depth": 4,
+      "repeat": 1,
+      "job_id": "d9p9gdjbvhrs73a2b9rg",
+      "submitted_at": "2026-08-05T01:56:06Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p4_rep1"
+      ],
+      "completed_at": "2026-08-05T01:56:14Z",
+      "result": {
+        "best_cut": 57514.08877729828,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 1.0,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p4_rep2",
+      "instance": "I3",
+      "depth": 4,
+      "repeat": 2,
+      "job_id": "d9p9gdu28h6s739r166g",
+      "submitted_at": "2026-08-05T01:56:08Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p4_rep2"
+      ],
+      "completed_at": "2026-08-05T01:56:18Z",
+      "result": {
+        "best_cut": 56965.78100206051,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 0.99046654851195,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I3_p4_rep3",
+      "instance": "I3",
+      "depth": 4,
+      "repeat": 3,
+      "job_id": "d9p9ggu28h6s739r16ag",
+      "submitted_at": "2026-08-05T01:56:19Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I3_p4_rep3"
+      ],
+      "completed_at": "2026-08-05T01:56:27Z",
+      "result": {
+        "best_cut": 56670.29249482008,
+        "opt_cut": 57514.08877729828,
+        "approximation_ratio": 0.9853288767949452,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p4_rep1",
+      "instance": "I4",
+      "depth": 4,
+      "repeat": 1,
+      "job_id": "d9p9ghd7skus73cklsa0",
+      "submitted_at": "2026-08-05T01:56:21Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p4_rep1"
+      ],
+      "completed_at": "2026-08-05T01:56:31Z",
+      "result": {
+        "best_cut": 33640.766015471425,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 0.9834279166012413,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p4_rep2",
+      "instance": "I4",
+      "depth": 4,
+      "repeat": 2,
+      "job_id": "d9pafpt7skus73ckn3vg",
+      "submitted_at": "2026-08-05T03:03:03Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p4_rep2"
+      ],
+      "completed_at": "2026-08-05T03:03:30Z",
+      "account": "accountB",
+      "account_crn": "crn:v1:bluemix:public:quantum-computing:us-east:a/[REDACTED-ACCOUNT-ID]:[REDACTED-INSTANCE-ID]::",
+      "result": {
+        "best_cut": 34116.33330951177,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 0.9973302799957142,
+        "usage_seconds": 5
+      }
+    },
+    {
+      "tag": "I4_p4_rep3",
+      "instance": "I4",
+      "depth": 4,
+      "repeat": 3,
+      "job_id": "d9pafsbbvhrs73a2cgh0",
+      "submitted_at": "2026-08-05T03:03:13Z",
+      "status": "DONE",
+      "tag_confirmed": true,
+      "confirmed_tags": [
+        "I4_p4_rep3"
+      ],
+      "completed_at": "2026-08-05T03:03:40Z",
+      "account": "accountB",
+      "account_crn": "crn:v1:bluemix:public:quantum-computing:us-east:a/[REDACTED-ACCOUNT-ID]:[REDACTED-INSTANCE-ID]::",
+      "result": {
+        "best_cut": 33909.12825522836,
+        "opt_cut": 34207.65817970167,
+        "approximation_ratio": 0.9912730090189855,
+        "usage_seconds": 5
+      }
+    }
+  ]
+}

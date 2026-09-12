@@ -1,0 +1,18 @@
+{
+  "rep_tag": "I5_p1_rep1",
+  "job_id": "d9p5vpbbvhrs73a27bcg",
+  "tags": [
+    "I5_p1_rep1"
+  ],
+  "best_cut": 34202.22618075773,
+  "opt_cut": 35788.53551968903,
+  "approximation_ratio": 0.9556754889269332,
+  "usage_seconds": 5,
+  "shots": 8192,
+  "gamma": [
+    1.9944847296004526
+  ],
+  "beta": [
+    0.7978071852762219
+  ]
+}
