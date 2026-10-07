@@ -13,7 +13,7 @@ Each folder holds the pre-registration (`PREREGISTRATION.md`), the simulator ref
 job was submitted (`reference.json`), the frozen analysis script, the submit script, the job manifest (raw
 counts, job IDs, tags, transpiled gate counts) and the frozen analysis output. `expansion/LOCK.json` records
 the sha256 of every locked file, including `PREREGISTRATION.md` and `submit_expansion.py`; the scripts are
-shipped unchanged, so those hashes still verify. `expansion/params_source_norm_study.json` holds the
+shipped unchanged, so those hashes still verify. `verify_locks.py` re-checks every locked file of both studies (the pilot hashes are in `pilot/manifest_pilot.json`); the files are stored byte-exact (`.gitattributes` turns off line-ending conversion for `pilot/` and `expansion/`). The pre-registrations carry the author's own timestamps (pilot document 2026-10-07 08:16 AEST, first job 08:17; expansion locked 08:43, first job 08:46); they were not lodged with an external registry. `expansion/params_source_norm_study.json` holds the
 best-of-7 multi-start parameters used by both studies.
 
 **Reproduce the table without IBM access:**
