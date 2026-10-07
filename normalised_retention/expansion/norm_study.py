@@ -1,6 +1,7 @@
-import sys, json, time
-sys.path.insert(0, r'C:\Users\381487~1\AppData\Local\Temp\claude\C--Users-381487616-Downloads-project4\e9172a3a-54b1-493d-baa0-d5f06b671b9f\scratchpad\audit')
+import sys, json, time, os
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'baseline_analysis'))
 from common import *
+from xcheck_common import probs_by_index
 from scipy.optimize import minimize
 from concurrent.futures import ProcessPoolExecutor
 
@@ -38,7 +39,7 @@ def run_task(args):
     if protocol == 'shot':
         def f(x):
             pr = probs(A, x, p); pr = pr / pr.sum()
-            counts = np.random.default_rng(42).multinomial(SHOTS, pr)    # fixed seed, as seed_simulator=42
+            counts = np.random.default_rng(42).multinomial(SHOTS, pr)    # seed, as seed_simulator=42
             return -(counts * cv).sum() / SHOTS / opt
     else:
         def f(x):
