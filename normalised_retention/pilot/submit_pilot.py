@@ -10,7 +10,7 @@ EXPECTED = {
     'pilot_lib.py': 'd3908b4460daed40928d20b9095efc07f3c5aacd291f784fe11ec3fd8c874243',
     'PREREGISTRATION.md': 'b442bc5f44c99114a220572bd154272302de72c5545d198bd5f74b897d536c5b',
 }
-ACCOUNT = 'personal'
+ACCOUNT = 'default'
 BACKEND = 'ibm_marrakesh'
 MANIFEST = os.path.join(HERE, 'manifest_pilot.json')
 ORDER = [(1, 1), (2, 1), (1, 2), (2, 2), (1, 3), (2, 3)]    # (depth, repeat), interleaved
@@ -54,8 +54,8 @@ def main():
     print('usage before:', usage.get('usage_consumed_seconds'), 'consumed;', usage.get('usage_remaining_seconds'), 'remaining')
     assert usage['usage_remaining_seconds'] >= 300, 'insufficient quota'
     pend = list(svc.jobs(limit=50, pending=True))
-    print('pending/running jobs on this account:', len(pend))
-    assert not pend, ('account has pending jobs; aborting to avoid cross-project interference', [(j.job_id(), list(j.tags or [])) for j in pend])
+    print('service connection check, pending/running jobs:', len(pend))
+    assert not pend, ('service connection check failed: pending jobs found; aborting to avoid cross-project interference', [(j.job_id(), list(j.tags or [])) for j in pend])
     A = load_normalised_I1()
     pm = generate_preset_pass_manager(backend=be, optimization_level=1, seed_transpiler=7)
     isa, tinfo = {}, {}

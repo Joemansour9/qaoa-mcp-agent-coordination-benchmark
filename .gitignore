@@ -12,5 +12,3 @@ Thumbs.db
 .env
 .venv/
 
-# Large supplementary file excluded from the public repo; kept locally, not committed.
-supplementary/audit_trail/raw_account_history_I6_I11_window.json
