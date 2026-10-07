@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "description": "Twenty n=8 QAOA hardware jobs on ibm_marrakesh, pulled directly from IBM Quantum account job history (account CRN: crn:v1:bluemix:public:quantum-computing:us-east:a/[REDACTED-ACCOUNT-ID]:[REDACTED-INSTANCE-ID]::) on 2026-09-11 via qiskit-ibm-runtime, using the account-1 saved credential. These jobs predate the job-level tagging protocol adopted for n=16 (Section 4.4); none carry a tag, so individual (instance, depth) attribution is not recoverable from job metadata alone. Account CRN redacted for privacy; see reproducibility_package/README.md.",
+    "description": "Twenty n=8 QAOA hardware jobs on ibm_marrakesh, taken from the IBM Quantum job history on 2026-09-11 via qiskit-ibm-runtime. These jobs predate the job-level tagging protocol adopted for n=16 (Section 4.4); none carry a tag, so individual (instance, depth) attribution is not recoverable from job metadata alone. Identifiers are redacted; see reproducibility_package/README.md.",
     "window": "2026-06-04T19:26:44.288Z - 2026-06-04T19:32:10.800Z (all 20 jobs submitted within a single 6-minute run)",
     "backend": "ibm_marrakesh",
     "shots_per_job": 8192,
     "num_clbits_per_job": 8,
     "total_jobs_in_source_window": 129,
-    "note_on_129_vs_20": "The account history window 2026-06-04T19:26-2026-06-06T02:24 contains 129 total jobs; only these 20 are 8-qubit (num_clbits=8) circuits. The remaining 109 are 16-qubit circuits from early, untagged n=16 exploration predating the I1-I11 protocol and are out of scope for this file.",
+    "note_on_129_vs_20": "The job history window 2026-06-04T19:26-2026-06-06T02:24 contains 129 total jobs; only these 20 are 8-qubit (num_clbits=8) circuits. The remaining 109 are 16-qubit circuits from early, untagged n=16 exploration predating the I1-I11 protocol and are out of scope for this file.",
     "gate_size_clustering": {
-      "description": "Gate counts (post-transpilation circuit size) cluster into four groups of exactly five jobs, consistent with a systematic 5-instance x 4-depth sweep (p=1..4). Depth-group numbering (1=lowest gate count .. 4=highest) is inferred from QAOA gate-count scaling with circuit depth p, not confirmed via tags -- individual instance identity within each depth group is not recoverable (see attribution_note).",
+      "description": "Gate counts (post-transpilation circuit size) cluster into four groups of exactly five jobs, consistent with a systematic 5-instance x 4-depth sweep (p=1..4). Depth-group numbering (1=lowest gate count .. 4=highest) is inferred from QAOA gate-count scaling with circuit depth p, not read from tags -- individual instance identity within each depth group is not recoverable (see attribution_note).",
       "group_1_gate_sizes": [
         378,
         390,
@@ -38,7 +38,7 @@
         1802
       ]
     },
-    "attribution_note": "Individual (instance, depth) attribution is not recoverable, and not merely because jobs are untagged: at n=8 the outcome space (2^8=256 possible bitstrings) is small relative to the 8192-shot budget (~32x), so the best-observed-cut statistic (max cut value across all distinct measured outcomes, matching evaluate_circuit_hardware in qaoa_qap_experiment.py) saturates to each candidate instance's own C* for every one of the 20 jobs against all five instances (I1-I5) simultaneously -- confirmed by direct computation, not assumed. This means job results cannot discriminate which specific instance produced a given job, but it does mean every real job in this batch is independently consistent with r=1.000 under any candidate assignment, supporting Table tab:results8's HW column at the aggregate level.",
+    "attribution_note": "Individual (instance, depth) attribution is not recoverable, and not merely because jobs are untagged: at n=8 the outcome space (2^8=256 possible bitstrings) is small relative to the 8192-shot budget (~32x), so the best-observed-cut statistic (max cut value across all distinct measured outcomes, matching evaluate_circuit_hardware in qaoa_qap_experiment.py) saturates to each candidate instance's own C* for every one of the 20 jobs against all five instances (I1-I5) simultaneously -- computed directly for all 20 jobs and all five instances. This means job results cannot discriminate which specific instance produced a given job, but it does mean every real job in this batch is independently consistent with r=1.000 under any candidate assignment, supporting Table tab:results8's HW column at the aggregate level.",
     "claim_backed": "Table tab:results8 HW column (r=1.000 uniformly, Delta r=0.000) and the paper_draft.tex Section 4.4 sentence on n=8 aggregate structural confirmation.",
     "qpu_usage_note": "quantum_seconds per job read from the IBM Quantum job record (job.usage()) on 2026-10-07; range 4-5 s, total 90 s over 20 jobs."
   },

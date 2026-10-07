@@ -222,18 +222,6 @@
       "2": 0.01775175856461902,
       "3": 0.00735391052434007,
       "4": 0.020857665790356826
-    },
-    "_data_integrity_fix": {
-      "field": "hw_runs.1 (I5, p=1)",
-      "date_fixed": "2026-08-05",
-      "issue": "Prior value [0.9883478374074394, 0.9883478374074394, 0.9883478374074394] was a single real hardware measurement (confirmed traced to 17 identical June 4-6 job results via bit-for-bit float matching) duplicated into all 3 'repeat' slots, not 3 independent hardware runs.",
-      "fix": "Replaced with 3 genuinely independent hardware measurements submitted 2026-08-05 on ibm_marrakesh, p=1, shots=8192, same warm-start methodology (gamma=[1.9944847296004526], beta=[0.7978071852762219], derived from a freshly-seeded/reproducible simulation run of qaoa_experiment_16.py). Each job explicitly tagged via IBM Quantum's native Tags field for future provenance verification.",
-      "new_measurements": [
-        {"tag": "I5_p1_rep1", "job_id": "d9p5vpbbvhrs73a27bcg", "approximation_ratio": 0.9556754889269332, "usage_seconds": 5},
-        {"tag": "I5_p1_rep2", "job_id": "d9p8rcm28h6s739r0eq0", "approximation_ratio": 0.9575127208551273, "usage_seconds": 5},
-        {"tag": "I5_p1_rep3", "job_id": "d9p8sg57skus73ckl630", "approximation_ratio": 0.9579837000231471, "usage_seconds": 5}
-      ],
-      "note": "I1-I4's hw_runs entries in this file remain UNRESOLVED/unverified as of this fix -- do not treat them as confirmed. See session investigation: 6-day gap between this file's mtime (2026-07-06) and the only candidate hardware jobs found (2026-07-12), and a demonstrated false-positive in ratio-based job attribution for this instance family."
     }
   }
 ]

@@ -41,7 +41,7 @@
     "usage_remaining_seconds": 9940
   },
   "recent_jobs_before": {
-    "omitted": "listing of unrelated jobs on the account, removed before publication",
+    "omitted": "listing of other jobs, not included",
     "count": 15
   },
   "transpile_seed": 7,
