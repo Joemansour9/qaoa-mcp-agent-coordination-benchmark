@@ -63,6 +63,7 @@ I6–I11 (each independently measured).
 | `results_I10_n16_simulate.json`, `results_I11_n16_simulate.json` | Already `seed_simulator=42`-current. Source for R(I10), R(I11) |
 | `results_n16_simulate_seeded_2026-08-05.json` | Seeded I1–I5 simulation baseline, used to compute R in Table `tab:utility` |
 | `original_unseeded/results_I{6-9}_n16_simulate_ORIGINAL.json` | The original unseeded I6–I9 simulation runs, whose parameters the I6–I9 hardware runs executed. Used by `analysis/parameter_matched_recomputation.py` |
+| `results_n16_singlerun_depthprofile.json` | Single run with unseeded simulation and untagged hardware jobs. Source of both the Sim and HW columns of Table 6 (`tab:results16`) and of Figures 4 and 5 (`fig:ratio_n16`, `fig:gap_n16`). Not reproducible: 10 of its 20 simulation cells differ by 0.01 or more (at most 0.031) from `results_n16_simulate_seeded_2026-08-05.json`. Used only to describe the depth profile |
 
 ### `job_manifest/` — Section 4.4, "Data provenance and verification"
 
@@ -116,7 +117,7 @@ Saved-credential profile names in the shipped manifests are replaced by the neut
 |---|---|
 | `fig_n16_approx_ratio.png` | Figure `fig:ratio_n16` |
 | `fig_n16_sim_vs_hw.png` | Figure `fig:gap_n16` |
-| `quick_figs.py` | Plotting script only — regenerates both figures from the single-run values of Table `tab:results16` (hardcoded in the script; historical, non-reproducible run, see `supplementary/audit_trail/`), no live simulation or hardware run needed; not a data source |
+| `quick_figs.py` | Plotting script only — regenerates both figures from the single-run values of Table `tab:results16` (hardcoded in the script; single run with unseeded simulation and untagged hardware jobs, see `n16/results/results_n16_singlerun_depthprofile.json`), no live simulation or hardware run needed; not a data source |
 
 ---
 
@@ -135,12 +136,3 @@ pre-specification documents, references, frozen analyses, manifests and a script
 counts. See `normalised_retention/README.md`.
 
 ---
-
-## `supplementary/audit_trail/`
-Provenance-investigation artifacts, kept for transparency but not the direct source of any table in the paper:
-
-| File | Backs |
-|---|---|
-| `i6_i11_retroactive_audit.json` | The retroactive job-history matching used to validate the I6–I11 tagged-rerun attribution methodology. |
-| `raw_account_history_I6_I11_window.json` | The raw IBM Quantum account job-history dump that audit was built from. **Excluded from this public repo** (25MB, and not the source of any table or figure — `i6_i11_retroactive_audit.json` above is the derived artifact actually used). Exists locally; available on request. |
-| `results_n16_singlerun_depthprofile_PREAUDIT.json` | ⚠️ Early single-run data with unseeded simulation and untagged hardware jobs; source for **both the Sim and HW columns** of Table `tab:results16` and for Figures `fig:ratio_n16` and `fig:gap_n16`. Not reproducible: 10 of its 20 simulation cells differ by 0.01 or more (at most 0.031) from the seeded simulation in `n16/results/results_n16_simulate_seeded_2026-08-05.json`. Used only to describe the depth profile, and not for any other claim. |

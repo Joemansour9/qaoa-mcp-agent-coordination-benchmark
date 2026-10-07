@@ -2,7 +2,7 @@
 
 Data are read from the package, not retyped:
   - n=8 and n=16 single-run values: the RESULTS table inside n8/figures/quick_figs.py and n16/figures/quick_figs.py
-    (n=16 values are the historical single-run data of Table tab:results16; see supplementary/audit_trail/).
+    (n=16 values are the single-run data of Table tab:results16; see n16/results/results_n16_singlerun_depthprofile.json).
   - n=8 cost matrix: n8/cost_matrices/mcp_agent_data_cost_matrix.csv.
   - retention figure: normalised_retention/{pilot,expansion}/ (frozen analysis outputs).
 Run:  python make_paper_figures.py      (writes the PDFs next to this script)

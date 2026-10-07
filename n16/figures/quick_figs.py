@@ -9,7 +9,7 @@ Both figures are explicitly captioned in the paper as "single-run data"
 (see Figure fig:ratio_n16's caption: Sim r=0.967-1.000, HW r=0.974-1.000),
 which is Table tab:results16, NOT the repeated/verified dataset behind
 Table tab:utility. Values below are taken directly from
-supplementary/audit_trail/results_n16_singlerun_depthprofile_PREAUDIT.json
+n16/results/results_n16_singlerun_depthprofile.json
 and independently cross-checked against every cell of the printed
 tab:results16 table in paper_draft.tex (all 40 sim/hw values, plus
 greedy and optimal_cut, match exactly).
