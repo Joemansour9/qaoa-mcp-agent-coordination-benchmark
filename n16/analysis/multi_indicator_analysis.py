@@ -126,7 +126,7 @@ density_cv_note = (
     "density is IDENTICAL (77/120=0.641667) across all 5 instances -- zero "
     "variance, correlation undefined by construction. CV is degenerate: "
     "I1-I4 tie exactly (0.343921), only I5 differs (0.338034) -- effectively "
-    "one bit of information, not a continuous feature. See density_cv_verified.json."
+    "one bit of information, not a continuous feature. See density_cv.json."
 )
 
 out = {

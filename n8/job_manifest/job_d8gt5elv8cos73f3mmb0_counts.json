@@ -7,7 +7,7 @@
  "n_qubits": 8,
  "qubit_order": "Qiskit little-endian: rightmost character is qubit 0",
  "inferred_depth_p": 4,
- "inferred_depth_note": "untagged job; depth group inferred from transpiled gate count as in n8_hardware_jobs_verified.json",
+ "inferred_depth_note": "untagged job; depth group inferred from transpiled gate count as in n8_hardware_jobs.json",
  "instance_note": "untagged job; instance not recoverable from job metadata",
  "transpiled": {
   "size": 1802,

@@ -14,7 +14,7 @@ and Section sec:disc:noise:i1i5. Inputs are read directly from file:
     build_i6_i11_output.py from the tagged rerun manifest).
   - Density and CV: computed directly from the symmetrized cost
     matrices in ../cost_matrices/ (same (W + W.T) / 2, off-diagonal
-    upper-triangle convention as density_cv_verified.json), not
+    upper-triangle convention as density_cv.json), not
     hardcoded from the paper's printed table.
 
 Reproduces the paper's exact printed numbers for all three tested

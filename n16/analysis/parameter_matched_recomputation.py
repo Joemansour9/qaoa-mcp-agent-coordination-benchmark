@@ -6,7 +6,7 @@ optimiser run (simulated ratio 0.9557); the seeded pairing uses the seeded value
 This script computes each quantity with the simulated ratio of the run whose parameters were executed.
 
 Inputs (all inside this package):
-  n16/results/original_unseeded/results_I{6-9}_n16_simulate_ORIGINAL.json   (unseeded simulation)
+  n16/results/unseeded/results_I{6-9}_n16_simulate_unseeded.json   (unseeded simulation)
   n16/results/results_I{6-11}_n16_simulate.json                             (seeded simulation)
   n16/results/results_I{6-11}_n16_hardware.json                             (tagged repeated hardware runs)
   n16/results/results_I1_I4_rerun_2026-08-05.json, results_repeated_optionB.json,
@@ -33,7 +33,7 @@ def load_hw(inst):
     return {int(p): [r['approximation_ratio'] for r in v] for p, v in d.items()}
 
 
-orig = {k: load_sim(os.path.join(RES, 'original_unseeded', 'results_%s_n16_simulate_ORIGINAL.json' % k)) for k in ['I6', 'I7', 'I8', 'I9']}
+orig = {k: load_sim(os.path.join(RES, 'unseeded', 'results_%s_n16_simulate_unseeded.json' % k)) for k in ['I6', 'I7', 'I8', 'I9']}
 seeded = {k: load_sim(os.path.join(RES, 'results_%s_n16_simulate.json' % k)) for k in ['I6', 'I7', 'I8', 'I9', 'I10', 'I11']}
 hw = {k: load_hw(k) for k in seeded}
 
