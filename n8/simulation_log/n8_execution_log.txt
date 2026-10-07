@@ -1,0 +1,118 @@
+
+============================================================
+QAOA MCP Agent Coordination Benchmark
+Mode:   simulate
+Depths: p=1..4
+Shots:  8192
+Matrix: mcp_agent_data_cost_matrix.csv
+============================================================
+
+Loaded cost matrix from: mcp_agent_data_cost_matrix.csv
+Non-zero edges: 25/28
+Weight range: 298–1024 tokens
+
+============================================================
+Instance 1/5: I1_full_graph
+============================================================
+  Optimal cut:  9443.8  (0.00s)
+  Greedy cut:   8726.0  (r=0.924)
+
+  ── p=1 ──
+    Simulating... cut=9443.8, r=1.000
+
+  ── p=2 ──
+    Simulating... cut=9443.8, r=1.000
+
+  ── p=3 ──
+    Simulating... cut=9443.8, r=1.000
+
+  ── p=4 ──
+    Simulating... cut=9443.8, r=1.000
+
+============================================================
+Instance 2/5: I2_simple_tasks
+============================================================
+  Optimal cut:  5541.1  (0.01s)
+  Greedy cut:   5120.0  (r=0.924)
+
+  ── p=1 ──
+    Simulating... cut=5541.1, r=1.000
+
+  ── p=2 ──
+    Simulating... cut=5541.1, r=1.000
+
+  ── p=3 ──
+    Simulating... cut=5541.1, r=1.000
+
+  ── p=4 ──
+    Simulating... cut=5541.1, r=1.000
+
+============================================================
+Instance 3/5: I3_complex_tasks
+============================================================
+  Optimal cut:  15900.9  (0.00s)
+  Greedy cut:   14692.3  (r=0.924)
+
+  ── p=1 ──
+    Simulating... cut=15900.9, r=1.000
+
+  ── p=2 ──
+    Simulating... cut=15900.9, r=1.000
+
+  ── p=3 ──
+    Simulating... cut=15900.9, r=1.000
+
+  ── p=4 ──
+    Simulating... cut=15900.9, r=1.000
+
+============================================================
+Instance 4/5: I4_latency_reweighted
+============================================================
+  Optimal cut:  9683.5  (0.00s)
+  Greedy cut:   8701.7  (r=0.899)
+
+  ── p=1 ──
+    Simulating... cut=9683.5, r=1.000
+
+  ── p=2 ──
+    Simulating... cut=9683.5, r=1.000
+
+  ── p=3 ──
+    Simulating... cut=9683.5, r=1.000
+
+  ── p=4 ──
+    Simulating... cut=9683.5, r=1.000
+
+============================================================
+Instance 5/5: I5_random_baseline
+============================================================
+  Optimal cut:  10251.8  (0.00s)
+  Greedy cut:   9295.5  (r=0.907)
+
+  ── p=1 ──
+    Simulating... cut=10251.8, r=1.000
+
+  ── p=2 ──
+    Simulating... cut=10251.8, r=1.000
+
+  ── p=3 ──
+    Simulating... cut=10251.8, r=1.000
+
+  ── p=4 ──
+    Simulating... cut=10251.8, r=1.000
+
+Results saved → results.json
+Saved Figure 1
+Saved Figure 3
+Saved Figure 4
+
+============================================================
+FINAL SUMMARY
+============================================================
+Instance                Optimal   Greedy    Sim p=4     HW p=4
+--------------------------------------------------------------
+I1_full_graph              9444    0.924      1.000        N/A
+I2_simple_tasks            5541    0.924      1.000        N/A
+I3_complex_tasks          15901    0.924      1.000        N/A
+I4_latency_reweighted      9683    0.899      1.000        N/A
+I5_random_baseline        10252    0.907      1.000        N/A

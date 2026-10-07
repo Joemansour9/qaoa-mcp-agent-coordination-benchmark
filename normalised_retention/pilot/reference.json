@@ -1,0 +1,50 @@
+{
+  "created": "2026-10-07T08:14:46+10:00",
+  "instance": "I1",
+  "weights": "max-normalised (w / max w); cut ratios are scale invariant",
+  "params_source": {
+    "file": "scratchpad/audit/norm_study.json",
+    "sha256": "b52e78ccef38f48726186894e7dee222db67cef1a861b7521c2c3fac1d3fed02",
+    "selection": "best exact-objective value among 7 COBYLA starts (maxiter 200, rhobeg 0.5), x[:p]=gamma (cost), x[p:]=beta (mixer)"
+  },
+  "uniform": {
+    "U": 0.7701537854317337,
+    "sd": 0.09281276843117582,
+    "n_opt": 2,
+    "P_opt": 3.0517578125e-05,
+    "E_best8192": 0.9881934521812362,
+    "SE_mean_of_3_jobs": 0.0005920414694569676
+  },
+  "shots_per_job": 8192,
+  "jobs_per_depth": 3,
+  "depths": {
+    "1": {
+      "start": 3,
+      "gamma": [
+        0.26516785259154096
+      ],
+      "beta": [
+        1.311473012768249
+      ],
+      "E_C_over_Cstar": 0.860246701528953,
+      "P_opt": 0.0006959978444280089,
+      "E_best8192": 0.9999763083588148,
+      "crosscheck_tvd_qiskit_vs_numpy": 1.6470611165570041e-15
+    },
+    "2": {
+      "start": 3,
+      "gamma": [
+        0.21556287290380766,
+        0.47088388330684183
+      ],
+      "beta": [
+        1.2029555187171965,
+        1.3372120175608977
+      ],
+      "E_C_over_Cstar": 0.9023030661224524,
+      "P_opt": 0.00562339207186476,
+      "E_best8192": 0.9999999999846951,
+      "crosscheck_tvd_qiskit_vs_numpy": 2.5301555814109535e-15
+    }
+  }
+}

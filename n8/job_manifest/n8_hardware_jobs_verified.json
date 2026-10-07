@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "description": "Twenty n=8 QAOA hardware jobs on ibm_marrakesh, pulled directly from IBM Quantum account job history (account CRN: crn:v1:bluemix:public:quantum-computing:us-east:a/[REDACTED-ACCOUNT-ID]:[REDACTED-INSTANCE-ID]::) on 2026-09-11 via qiskit-ibm-runtime, using the default-ibm-cloud saved credential. These jobs predate the job-level tagging protocol adopted for n=16 (Section 4.4); none carry a tag, so individual (instance, depth) attribution is not recoverable from job metadata alone. Account CRN redacted for privacy; see reproducibility_package/README.md.",
+    "description": "Twenty n=8 QAOA hardware jobs on ibm_marrakesh, pulled directly from IBM Quantum account job history (account CRN: crn:v1:bluemix:public:quantum-computing:us-east:a/[REDACTED-ACCOUNT-ID]:[REDACTED-INSTANCE-ID]::) on 2026-09-11 via qiskit-ibm-runtime, using the account-1 saved credential. These jobs predate the job-level tagging protocol adopted for n=16 (Section 4.4); none carry a tag, so individual (instance, depth) attribution is not recoverable from job metadata alone. Account CRN redacted for privacy; see reproducibility_package/README.md.",
     "window": "2026-06-04T19:26:44.288Z - 2026-06-04T19:32:10.800Z (all 20 jobs submitted within a single 6-minute run)",
     "backend": "ibm_marrakesh",
     "shots_per_job": 8192,
@@ -39,7 +39,8 @@
       ]
     },
     "attribution_note": "Individual (instance, depth) attribution is not recoverable, and not merely because jobs are untagged: at n=8 the outcome space (2^8=256 possible bitstrings) is small relative to the 8192-shot budget (~32x), so the best-observed-cut statistic (max cut value across all distinct measured outcomes, matching evaluate_circuit_hardware in qaoa_qap_experiment.py) saturates to each candidate instance's own C* for every one of the 20 jobs against all five instances (I1-I5) simultaneously -- confirmed by direct computation, not assumed. This means job results cannot discriminate which specific instance produced a given job, but it does mean every real job in this batch is independently consistent with r=1.000 under any candidate assignment, supporting Table tab:results8's HW column at the aggregate level.",
-    "claim_backed": "Table tab:results8 HW column (r=1.000 uniformly, Delta r=0.000) and the paper_draft.tex Section 4.4 sentence on n=8 aggregate structural confirmation."
+    "claim_backed": "Table tab:results8 HW column (r=1.000 uniformly, Delta r=0.000) and the paper_draft.tex Section 4.4 sentence on n=8 aggregate structural confirmation.",
+    "qpu_usage_note": "quantum_seconds per job read from the IBM Quantum job record (job.usage()) on 2026-10-07; range 4-5 s, total 90 s over 20 jobs."
   },
   "jobs": [
     {
@@ -73,7 +74,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 1
+      "inferred_depth_group": 1,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt30lv8cos73f3mjg0",
@@ -106,7 +108,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 2
+      "inferred_depth_group": 2,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt355v8cos73f3mjm0",
@@ -139,7 +142,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 3
+      "inferred_depth_group": 3,
+      "quantum_seconds": 5
     },
     {
       "job_id": "d8gt3a5v8cos73f3mjrg",
@@ -172,7 +176,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 4
+      "inferred_depth_group": 4,
+      "quantum_seconds": 5
     },
     {
       "job_id": "d8gt3d5v8cos73f3mjv0",
@@ -205,7 +210,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 1
+      "inferred_depth_group": 1,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt3h5v8cos73f3mk3g",
@@ -238,7 +244,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 2
+      "inferred_depth_group": 2,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt3ldv8cos73f3mk8g",
@@ -271,7 +278,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 3
+      "inferred_depth_group": 3,
+      "quantum_seconds": 5
     },
     {
       "job_id": "d8gt3qs2upec739kakmg",
@@ -304,7 +312,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 4
+      "inferred_depth_group": 4,
+      "quantum_seconds": 5
     },
     {
       "job_id": "d8gt3uc2upec739kakrg",
@@ -337,7 +346,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 1
+      "inferred_depth_group": 1,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt42c2upec739kal10",
@@ -370,7 +380,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 2
+      "inferred_depth_group": 2,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt46lv8cos73f3mkrg",
@@ -403,7 +414,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 3
+      "inferred_depth_group": 3,
+      "quantum_seconds": 5
     },
     {
       "job_id": "d8gt4bs2upec739kalbg",
@@ -436,7 +448,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 4
+      "inferred_depth_group": 4,
+      "quantum_seconds": 5
     },
     {
       "job_id": "d8gt4f42upec739kalfg",
@@ -469,7 +482,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 1
+      "inferred_depth_group": 1,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt4jdv8cos73f3ml80",
@@ -502,7 +516,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 2
+      "inferred_depth_group": 2,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt4nk2upec739kalog",
@@ -535,7 +550,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 3
+      "inferred_depth_group": 3,
+      "quantum_seconds": 5
     },
     {
       "job_id": "d8gt4tk2upec739kam30",
@@ -568,7 +584,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 4
+      "inferred_depth_group": 4,
+      "quantum_seconds": 5
     },
     {
       "job_id": "d8gt51dv8cos73f3mlq0",
@@ -601,7 +618,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 1
+      "inferred_depth_group": 1,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt551e8nrc73bgg37g",
@@ -634,7 +652,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 2
+      "inferred_depth_group": 2,
+      "quantum_seconds": 4
     },
     {
       "job_id": "d8gt59dv8cos73f3mm3g",
@@ -667,7 +686,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 3
+      "inferred_depth_group": 3,
+      "quantum_seconds": 5
     },
     {
       "job_id": "d8gt5elv8cos73f3mmb0",
@@ -700,7 +720,8 @@
           "ratio_vs_C_star": 1.0
         }
       },
-      "inferred_depth_group": 4
+      "inferred_depth_group": 4,
+      "quantum_seconds": 5
     }
   ]
 }

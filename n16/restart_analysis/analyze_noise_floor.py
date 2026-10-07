@@ -105,7 +105,7 @@ for inst, node in data.items():
     print(f"  pooled noise floor: std={pooled_std:.4f} (90% CI [{ci_lo:.4f}, {ci_hi:.4f}])  "
           f"IQR={pooled_iqr:.4f}  range={pooled_range:.4f}")
     print(f"  across-depth range of restart-averaged r (R's numerator): {depth_range:.4f}")
-    print(f"  R computed on restart-averaged r (denoised, n=20/depth):  {r_denoised:.4f}")
+    print(f"  R computed on restart-averaged r (n=30/depth):  {r_denoised:.4f}")
 
     verdict = "signal > noise" if depth_range > ci_hi else "NOISE-DOMINATED (within 90% CI of noise floor)"
     print(f"  --> {verdict}")

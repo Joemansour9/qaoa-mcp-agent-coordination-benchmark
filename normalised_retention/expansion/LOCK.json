@@ -1,0 +1,13 @@
+{
+  "locked_at": "2026-10-07T08:43:54+10:00",
+  "files": {
+    "reference.json": "4fe1319e6d4da004b592e72f98b3dd8018e710ee8cf93b5eac992928b362ccbd",
+    "params_source_norm_study.json": "b52e78ccef38f48726186894e7dee222db67cef1a861b7521c2c3fac1d3fed02",
+    "analyze_expansion.py": "1528d02142d0d8bef58c5b61cbe60971d65bfae1594f16306898c813ddf3b3b7",
+    "exp_lib.py": "2edcf5079070628f43a525478248467e6ded331192a4c75adbce279f066ebcb5",
+    "xcheck_common.py": "e1383985895b04a61ccae12ebdfc4c7bdeef98313379a24471d32a6eaee54663",
+    "make_reference.py": "917409ccd133bd1919a4dbcd4ce394f57b1e87ca99a7cb66bb69d0aa0c9b9f84",
+    "PREREGISTRATION.md": "85a7020b3cb67df12e77a26ee3f6723b1ec264b186dc5286800a7653ffb322a2",
+    "submit_expansion.py": "0587d381c6aadda5465bcb924438686e81e8e7b8f4d6943163db8372d2faf4af"
+  }
+}

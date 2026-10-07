@@ -1,0 +1,69 @@
+expansion: normalised weights, references from reference.json
+
+PRIMARY RESULT: all 8 cells
+
+| Instance | p | E[C]/C* uniform | E[C]/C* ideal | E[C]/C* hardware | P(opt) uniform | P(opt) ideal | P(opt) hardware (hits/shots) | rho (95% CI) | Category |
+|---|---|---|---|---|---|---|---|---|---|
+| I7 | 1 | 0.6999 | 0.8302 | 0.7962 | 1.22e-04 | 2.50e-03 | 1.30e-03 (32/24576) | 0.739 (0.731 to 0.748) | A |
+| I7 | 2 | 0.6999 | 0.8753 | 0.7749 | 1.22e-04 | 1.04e-02 | 1.14e-03 (28/24576) | 0.428 (0.420 to 0.436) | A |
+| I8 | 1 | 0.6660 | 0.7873 | 0.7519 | 3.05e-05 | 1.34e-03 | 5.29e-04 (13/24576) | 0.708 (0.699 to 0.717) | A |
+| I8 | 2 | 0.6660 | 0.8379 | 0.7363 | 3.05e-05 | 9.28e-03 | 6.10e-04 (15/24576) | 0.409 (0.402 to 0.416) | A |
+| I10 | 1 | 0.6656 | 0.8177 | 0.7829 | 3.05e-05 | 8.98e-04 | 7.32e-04 (18/24576) | 0.771 (0.762 to 0.780) | A |
+| I10 | 2 | 0.6656 | 0.8741 | 0.7844 | 3.05e-05 | 4.53e-03 | 1.14e-03 (28/24576) | 0.570 (0.563 to 0.577) | A |
+| I11 | 1 | 0.6532 | 0.7946 | 0.7421 | 3.05e-05 | 1.37e-03 | 5.29e-04 (13/24576) | 0.629 (0.620 to 0.637) | A |
+| I11 | 2 | 0.6532 | 0.8462 | 0.7410 | 3.05e-05 | 8.53e-03 | 1.06e-03 (26/24576) | 0.455 (0.448 to 0.462) | A |
+
+
+ I7 p=1
+  E_hw[C]/C* per job: 0.7972, 0.7975, 0.7940  mean 0.7962 | uniform 0.6999 | ideal 0.8302
+  excess over uniform: +119.8 SE | RETENTION rho = 0.739 (95% CI 0.731 to 0.748) | category A
+  P(opt): hw 0.00130 (32 hits of 24576) | ideal 0.00250 | uniform 0.00012 | hw/uniform 10.7x, ideal/uniform 20.4x | binomial p vs uniform 3.8e-22
+  best-of-8192 r per job (descriptive): 1.0000, 1.0000, 1.0000 | ideal E[best] 1.0000 | uniform E[best] 0.9974
+
+ I7 p=2
+  E_hw[C]/C* per job: 0.7663, 0.7793, 0.7790  mean 0.7749 | uniform 0.6999 | ideal 0.8753
+  excess over uniform: +93.2 SE | RETENTION rho = 0.428 (95% CI 0.420 to 0.436) | category A
+  P(opt): hw 0.00114 (28 hits of 24576) | ideal 0.01042 | uniform 0.00012 | hw/uniform 9.3x, ideal/uniform 85.3x | binomial p vs uniform 4.1e-18
+  best-of-8192 r per job (descriptive): 1.0000, 1.0000, 1.0000 | ideal E[best] 1.0000 | uniform E[best] 0.9974
+
+ I8 p=1
+  E_hw[C]/C* per job: 0.7520, 0.7516, 0.7523  mean 0.7519 | uniform 0.6660 | ideal 0.7873
+  excess over uniform: +123.2 SE | RETENTION rho = 0.708 (95% CI 0.699 to 0.717) | category A
+  P(opt): hw 0.00053 (13 hits of 24576) | ideal 0.00134 | uniform 0.00003 | hw/uniform 17.3x, ideal/uniform 44.0x | binomial p vs uniform 1.9e-12
+  best-of-8192 r per job (descriptive): 1.0000, 1.0000, 1.0000 | ideal E[best] 1.0000 | uniform E[best] 0.9832
+
+ I8 p=2
+  E_hw[C]/C* per job: 0.7382, 0.7356, 0.7351  mean 0.7363 | uniform 0.6660 | ideal 0.8379
+  excess over uniform: +100.8 SE | RETENTION rho = 0.409 (95% CI 0.402 to 0.416) | category A
+  P(opt): hw 0.00061 (15 hits of 24576) | ideal 0.00928 | uniform 0.00003 | hw/uniform 20.0x, ideal/uniform 304.0x | binomial p vs uniform 5e-15
+  best-of-8192 r per job (descriptive): 1.0000, 1.0000, 1.0000 | ideal E[best] 1.0000 | uniform E[best] 0.9832
+
+ I10 p=1
+  E_hw[C]/C* per job: 0.7830, 0.7814, 0.7843  mean 0.7829 | uniform 0.6656 | ideal 0.8177
+  excess over uniform: +143.4 SE | RETENTION rho = 0.771 (95% CI 0.762 to 0.780) | category A
+  P(opt): hw 0.00073 (18 hits of 24576) | ideal 0.00090 | uniform 0.00003 | hw/uniform 24.0x, ideal/uniform 29.4x | binomial p vs uniform 4.3e-19
+  best-of-8192 r per job (descriptive): 1.0000, 1.0000, 1.0000 | ideal E[best] 1.0000 | uniform E[best] 0.9875
+
+ I10 p=2
+  E_hw[C]/C* per job: 0.7866, 0.7849, 0.7819  mean 0.7844 | uniform 0.6656 | ideal 0.8741
+  excess over uniform: +145.3 SE | RETENTION rho = 0.570 (95% CI 0.563 to 0.577) | category A
+  P(opt): hw 0.00114 (28 hits of 24576) | ideal 0.00453 | uniform 0.00003 | hw/uniform 37.3x, ideal/uniform 148.6x | binomial p vs uniform 5e-34
+  best-of-8192 r per job (descriptive): 1.0000, 1.0000, 1.0000 | ideal E[best] 1.0000 | uniform E[best] 0.9875
+
+ I11 p=1
+  E_hw[C]/C* per job: 0.7417, 0.7425, 0.7420  mean 0.7421 | uniform 0.6532 | ideal 0.7946
+  excess over uniform: +118.0 SE | RETENTION rho = 0.629 (95% CI 0.620 to 0.637) | category A
+  P(opt): hw 0.00053 (13 hits of 24576) | ideal 0.00137 | uniform 0.00003 | hw/uniform 17.3x, ideal/uniform 45.0x | binomial p vs uniform 1.9e-12
+  best-of-8192 r per job (descriptive): 1.0000, 1.0000, 1.0000 | ideal E[best] 1.0000 | uniform E[best] 0.9770
+
+ I11 p=2
+  E_hw[C]/C* per job: 0.7427, 0.7380, 0.7422  mean 0.7410 | uniform 0.6532 | ideal 0.8462
+  excess over uniform: +116.5 SE | RETENTION rho = 0.455 (95% CI 0.448 to 0.462) | category A
+  P(opt): hw 0.00106 (26 hits of 24576) | ideal 0.00853 | uniform 0.00003 | hw/uniform 34.7x, ideal/uniform 279.5x | binomial p vs uniform 6.7e-31
+  best-of-8192 r per job (descriptive): 1.0000, 1.0000, 1.0000 | ideal E[best] 1.0000 | uniform E[best] 0.9770
+
+p=1: categories {'I7': 'A', 'I8': 'A', 'I10': 'A', 'I11': 'A'} | 4 of 4 in A/B | median rho 0.724 | mean rho 0.712 (95% CI 0.707 to 0.716) | survives: True
+p=2: categories {'I7': 'A', 'I8': 'A', 'I10': 'A', 'I11': 'A'} | 4 of 4 in A/B | median rho 0.441 | mean rho 0.465 (95% CI 0.462 to 0.469) | survives: True
+descriptive: p=2 retention below p=1 in 4 of 4 instances
+
+SECONDARY VERDICT (convenience summary; the per-cell table above is the result): CONFIRMED: signal survives at both depths across instances
