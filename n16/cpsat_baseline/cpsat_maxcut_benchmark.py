@@ -18,13 +18,13 @@ import csv
 import ctypes
 import importlib.util
 
-# Workaround for a packaging bug in ortools 9.15.6755's Windows DLL loader:
+# Windows DLL loading for ortools 9.15.6755:
 # ortools/__init__.py looks for "utf8_validity.dll" but the wheel ships
 # "libutf8_validity.dll" (lib-prefixed) -- silently skipped, which breaks a
 # later DLL's dependency resolution ("WinError 127: procedure not found").
 # On top of that, numpy/pandas load their own (incompatible) copy of some
 # same-named shared dependency, which shadows ortools' if imported first.
-# Fix: pre-load the correctly-named DLL, then import ortools/cp_model
+# Pre-load the correctly-named DLL, then import ortools/cp_model
 # BEFORE numpy/pandas, so ortools' own DLLs win the process-wide binding.
 _spec = importlib.util.find_spec('ortools')
 _ortools_dir = os.path.dirname(_spec.origin)

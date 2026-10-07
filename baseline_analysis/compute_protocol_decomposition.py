@@ -1,8 +1,8 @@
 """Which protocol change creates the noiseless margin over the uniform sampler?
 For I1, I7, I8, I10, I11 at p = 1, 2 (the depths run on hardware), the margin E_ideal[C]/C* - U of the noiseless circuit under:
-  (a) original protocol: raw weights, shot-based objective, single COBYLA start, parameters as shipped
+  (a) baseline protocol: raw weights, shot-based objective, single COBYLA start, parameters as shipped
       (ideal_margin.json, from compute_ideal_margin.py; run that script first);
-  (b) normalised weights, shot-based objective, single start (the original optimisation rule on normalised weights);
+  (b) normalised weights, shot-based objective, single start (the baseline optimisation rule on normalised weights);
   (c) normalised weights, exact objective, single start (same start as b);
   (d) normalised weights, exact objective, best of 7 starts (the protocol of the retention studies).
 (b)-(d) come from the saved normalisation study ../normalised_retention/expansion/params_source_norm_study.json.
@@ -24,7 +24,7 @@ def margin(inst, p, protocol, starts):
 
 
 out = []
-print('inst p | (a) original | (b) norm, shot, 1 start | (c) norm, exact, 1 start | (d) norm, exact, best of 7')
+print('inst p | (a) baseline | (b) norm, shot, 1 start | (c) norm, exact, 1 start | (d) norm, exact, best of 7')
 for k in INST:
     for p in (1, 2):
         row = dict(inst=k, p=p, original=A[(k, p)],

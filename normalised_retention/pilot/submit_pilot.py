@@ -42,7 +42,7 @@ def main():
     for f, h in EXPECTED.items():
         got = sha256(os.path.join(HERE, f))
         assert got == h, ('LOCKED FILE CHANGED', f, got)
-    print('locked-file hashes verified')
+    print('locked-file hashes match')
     ref = json.load(open(os.path.join(HERE, 'reference.json')))
     svc = QiskitRuntimeService(name=ACCOUNT)
     if mode == 'collect':

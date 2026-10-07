@@ -4,7 +4,7 @@ qaoa_experiment_16_I8.py
 QAOA Benchmarking — Instance I8 (topology-shifted)
 
 Adapted from qaoa_experiment_16.py (same circuit construction, optimizer
-configuration, and evaluation methodology — verified against real I1 data:
+configuration, and evaluation methodology;
 this script's symmetrization reproduces the paper's reported CV=0.344
 exactly). The only substantive change: instead of build_instances()
 deriving I2-I5 from I1 by scaling/permutation, this script runs QAOA on
@@ -97,7 +97,7 @@ def build_instances(W):
     genuinely different task mix (see mcp_data_generator_16_I8.py),
     not derived from I1 by scaling/permutation the way I2-I5 were.
     Kept as a single-element list so run_experiment()'s loop structure
-    below is otherwise unchanged from the original script.
+    below follows the structure of qaoa_experiment_16.py.
     """
     return [(W.copy(), 'I8_vectorsearch_codeexec_weighted')]
 
@@ -277,7 +277,7 @@ def run_experiment(mode='simulate', ibm_token=None,
                 )
 
     # If hardware-only and simulation wasn't run in THIS invocation,
-    # load previously-saved warm-start parameters instead of re-simulating
+    # load saved warm-start parameters instead of re-simulating
     # (avoids any risk of accidentally re-running simulation, and avoids
     # ambiguity about which sim run produced the warm-start actually used).
     preloaded_sim = None
@@ -505,7 +505,7 @@ def plot_results(results, p_values=[1, 2], output_dir='.',
         for p in p_values:
             sr = [r['qaoa_sim'][p]['approximation_ratio']
                   for r in results if p in r['qaoa_sim']]
-            # qaoa_hw[depth] is a LIST of run-dicts (post-merge-fix), and
+            # qaoa_hw[depth] is a LIST of run-dicts (after merging), and
             # keys may be str (post-merge) or int (same-session, unmerged).
             # Flatten all runs across all depth-key representations.
             hr = []
@@ -645,7 +645,7 @@ if __name__ == '__main__':
         # CRITICAL: merge with any existing hardware results rather than
         # overwriting. Each --hw_depths invocation only populates the
         # depths run THIS time — without merging, a prior run's results
-        # (e.g. p=4 from an earlier invocation) get silently wiped out.
+        # (e.g. p=4 from another invocation) get silently wiped out.
         with open(out_json) as f:
             existing = json.load(f)
         existing_hw = existing[0].get('qaoa_hw', {})

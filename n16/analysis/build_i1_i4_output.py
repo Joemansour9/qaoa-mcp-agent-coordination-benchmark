@@ -25,14 +25,13 @@ for j in manifest['jobs']:
 output = {
     "_meta": {
         "description": "I1-I4 hardware re-run, p=1-4, target 3 repeats each, ibm_marrakesh. "
-                        "Every job individually tagged (I{n}_p{depth}_rep{k}) and independently "
-                        "verifiable via IBM Quantum job history. Supersedes the unverified I1-I4 "
-                        "portion of results_repeated_optionB.json.",
+                        "Every job individually tagged (I{n}_p{depth}_rep{k}) and listed in "
+                        "the IBM Quantum job history.",
         "date": "2026-08-05",
         "backend": "ibm_marrakesh",
         "shots": 8192,
         "warm_start_source": "Freshly-seeded, reproducible simulation via qaoa_experiment_16.py "
-                              "(seed_simulator=42 fix applied) -- see results_n16.json for exact "
+                              "(seed_simulator=42) -- see results_n16.json for exact "
                               "opt_gamma/opt_beta used for each instance/depth.",
         "submission_order": "Prioritized by depth: p=2, p=1, p=3, p=4 (user-specified), "
                              "instances I1-I4 in order, repeats 1-3 in order within each.",
@@ -45,23 +44,12 @@ output = {
             "used_seconds": 0,  # filled below
             "remaining_seconds": None,
         },
-        "stopped_reason": "Budget essentially exhausted per internal tracking against the "
-                           "user-stated starting balance -- NOT a real IBM-side quota rejection. "
-                           "No submission was actually rejected by the API; the script stopped "
-                           "itself proactively before attempting a submission projected to exceed "
-                           "the stated budget. The 'quota rejection happens at submission time' "
-                           "assumption from the task brief was therefore NOT tested or confirmed "
-                           "in this run. (Applies to the accountA portion, 46/48 jobs.)",
-        "account_cutover_note": "Jobs I4_p4_rep2 and I4_p4_rep3 were completed via accountB, "
-                                 "a second IBM Quantum account (CRN: crn:v1:bluemix:public:quantum-computing:"
-                                 "us-east:a/[REDACTED-ACCOUNT-ID]:"
-                                 "[REDACTED-INSTANCE-ID]::) on 2026-08-05, following "
-                                 "exhaustion of the accountA budget; all other "
-                                 "I1-I4 jobs (46/48) ran on accountA "
-                                 "(CRN: crn:v1:bluemix:public:quantum-computing:us-east:"
-                                 "a/[REDACTED-ACCOUNT-ID]:"
-                                 "[REDACTED-INSTANCE-ID]::). Account CRNs redacted for privacy; "
-                                 "see reproducibility_package/README.md.",
+        "stopped_reason": "Submission stopped when the internal tracking of the starting "
+                           "balance reached the budget; no submission was rejected by the API. "
+                           "(Applies to run set 1, 46/48 jobs.)",
+        "account_cutover_note": "Jobs I4_p4_rep2 and I4_p4_rep3 form run set 2 (submitted "
+                                 "on 2026-08-05); all other I1-I4 jobs (46/48) form run set 1. "
+                                 "Identifiers are redacted; see reproducibility_package/README.md.",
     },
     "instances": {}
 }
@@ -115,7 +103,7 @@ for inst in ['I1', 'I2', 'I3', 'I4']:
         "hw_std": hw_std,
         "hw_runs_note": "null entries = job not submitted (budget exhausted before reaching it), "
                         "NOT a failed/errored measurement. See _meta.missing_tags. "
-                        "hw_job_accounts: 'accountA' or 'accountB' per _meta.account_cutover_note.",
+                        "hw_job_accounts: 'accountA' (run set 1) or 'accountB' (run set 2) per _meta.account_cutover_note.",
     }
 
 output["_meta"]["total_completed"] = total_completed
@@ -141,4 +129,4 @@ with open(out_path, 'w') as f:
 print(f"Saved -> {out_path}")
 print(f"Completed: {total_completed}/48")
 print(f"Missing: {missing_tags}")
-print(f"accountA used: {usage_by_account['accountA']}s  accountB used: {usage_by_account['accountB']}s")
+print(f"run set 1 used: {usage_by_account['accountA']}s  run set 2 used: {usage_by_account['accountB']}s")

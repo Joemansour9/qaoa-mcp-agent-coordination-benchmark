@@ -381,7 +381,7 @@ def run_agent_task(task: str, complexity: str, task_id: int) -> dict:
             messages.append(msg)
             messages.extend(tool_results)
 
-        # If max iterations hit without finishing, still mark partial success
+        # If max iterations hit without finishing, mark partial success
         if iteration >= max_iterations:
             success = len(tool_sequence) > 0
 

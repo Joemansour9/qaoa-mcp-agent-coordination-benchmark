@@ -1,8 +1,8 @@
 """
 Shared library for the I1-I4 tagged hardware re-run.
 Every submission goes through submit_one() and complete_one() so the
-manifest is always updated immediately, job-by-job, never reconstructed
-after the fact.
+manifest is written immediately, job-by-job, never reconstructed
+afterwards.
 """
 import json
 import os

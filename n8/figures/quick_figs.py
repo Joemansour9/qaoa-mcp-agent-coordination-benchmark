@@ -4,7 +4,7 @@ Quick Figure Generator
 Generates all 3 paper figures directly from known results.
 No quantum simulation or hardware needed.
 
-All results are r=1.000 (verified on IBM Marrakesh hardware).
+All results are r=1.000 (IBM Marrakesh hardware).
 
 Usage:
   python quick_figs.py

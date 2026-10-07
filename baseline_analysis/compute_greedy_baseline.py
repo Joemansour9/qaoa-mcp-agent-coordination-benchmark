@@ -25,7 +25,7 @@ for n, k in enumerate(NAMES):
     A = inst[k]
     opt = cut_values(A).max()
     single = greedy_in_order(A, list(range(N))) / opt
-    rng = np.random.default_rng(1000 + n)           # fixed seed per instance
+    rng = np.random.default_rng(1000 + n)           # seed per instance
     vals = np.array([greedy_in_order(A, rng.permutation(N)) / opt for _ in range(RESTARTS)])
     out[k] = dict(single_pass=float(single), randomized_mean=float(vals.mean()), randomized_best=float(vals.max()),
                   restarts=RESTARTS, seed=1000 + n)

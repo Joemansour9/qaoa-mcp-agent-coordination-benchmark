@@ -10,7 +10,7 @@ simulation, same cost-matrix construction) — the ONLY change is the
 TASKS dictionary below.
 
 Task-mix design for I11 — SEQUENTIAL CHAIN (8-server cycle):
-  - Fix a cyclic server order: FileSystem -> WebSearch -> Database ->
+  - Use a cyclic server order: FileSystem -> WebSearch -> Database ->
     Analytics -> Email -> Calendar -> CodeExecution -> VectorSearch ->
     (back to FileSystem).
   - Every task is a deterministic 3-step chain touching 3 consecutive

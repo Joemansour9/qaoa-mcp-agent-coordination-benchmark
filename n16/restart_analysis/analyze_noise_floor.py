@@ -7,13 +7,13 @@ NOT part of the paper -- exploratory check only.
 Requires N_RESTARTS=30 per (instance, depth) -- range alone is too fragile
 an estimator at small n, so this reports std and IQR as the primary noise
 statistics, with a bootstrap CI on std to make the "noise floor" number
-itself defensible, and keeps range only as a secondary/legacy comparison.
+itself defensible, and keeps range only as a secondary comparison.
 
 For each instance, at each depth p:
   - std(p), iqr(p)     : spread of r_sim across 30 restarts at fixed p
                          (x0 varies, seed_simulator/shots/max_iter fixed)
-  - range(p)           : max-min, kept for continuity with an earlier
-                         n=5-restart pilot of this same analysis
+  - range(p)           : max-min, kept for comparison with an
+                         n=5-restart pilot of this analysis
 
 Pooled across the 4 depths:
   - pooled_std         : mean of std(p) -- the noise floor, primary number

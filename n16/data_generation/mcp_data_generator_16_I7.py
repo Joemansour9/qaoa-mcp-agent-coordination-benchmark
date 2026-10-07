@@ -657,7 +657,7 @@ def run_experiment(n_tasks: int, output_path: str):
 
     all_results = []
     task_id     = 0
-    random.seed(602120)  # fixed seed; only affects WHICH
+    random.seed(602120)  # seed; only affects WHICH
                           # prompt variant is picked within a pool, never
                           # whether a task is DB-isolated (that's fixed above)
     isolated_count_by_tier = {}

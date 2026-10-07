@@ -14,14 +14,10 @@ I10 alone — a single instance measured from a genuinely different task
 mix (see mcp_data_generator_16_I10.py: two competing dominant hub
 pairs, FileSystem<->Analytics and Database<->Calendar).
 
-Also carries the seed_simulator fix identified while diagnosing the
-Table 5 vs Table 8/9 Sim p=2 divergence between qaoa_experiment_16.py
-and qaoa_repeated.py: neither of those scripts seeded AerSimulator's
-shot sampling, so COBYLA's np.random.default_rng(0) only fixed the
-optimizer's starting point, not its optimization path. Both
-evaluate_circuit_sim() and optimize_qaoa() here take seed_simulator
-(default 42, matching qaoa_i5_p34_clean_repeats.py's convention) so
-sim results are fully reproducible.
+Both evaluate_circuit_sim() and optimize_qaoa() take seed_simulator
+(default 42, matching qaoa_i5_p34_clean_repeats.py's convention), which
+seeds AerSimulator's shot sampling, so simulation results are
+reproducible. COBYLA's initial point is set by np.random.default_rng(0).
 
 Paper: "Benchmarking QAOA on MCP-Derived Agent Coordination
         Instances: Scaling from n=8 to n=16 on IBM Hardware"
@@ -276,7 +272,7 @@ def run_experiment(mode='simulate', ibm_token=None,
                 )
 
     # If hardware-only and simulation wasn't run in THIS invocation,
-    # load previously-saved warm-start parameters instead of re-simulating
+    # load saved warm-start parameters instead of re-simulating
     # (avoids any risk of accidentally re-running simulation, and avoids
     # ambiguity about which sim run produced the warm-start actually used).
     preloaded_sim = None
@@ -315,7 +311,7 @@ def run_experiment(mode='simulate', ibm_token=None,
     if mode in ('hardware', 'both'):
         from qiskit_ibm_runtime import QiskitRuntimeService
         # No --token given falls back to the locally saved Qiskit Runtime
-        # account (~/.qiskit/qiskit-ibm.json) rather than requiring a
+        # configuration (~/.qiskit/qiskit-ibm.json) rather than requiring a
         # token to be typed on the command line.
         if ibm_token is not None:
             service = QiskitRuntimeService(

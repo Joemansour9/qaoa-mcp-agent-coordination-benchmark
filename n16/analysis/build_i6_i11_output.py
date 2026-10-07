@@ -1,27 +1,18 @@
 """
-Regenerates results_I6-I11_n16_hardware.json directly from the tagged,
-independently-verified job manifest, analogous to build_i1_i4_output.py
-for I1-I4.
+Regenerates results_I6-I11_n16_hardware.json directly from the tagged
+job manifest (job_manifest/i6_i9_i10_i11_rerun_manifest.json), analogous
+to build_i1_i4_output.py for I1-I4. The generated hardware-result files
+match what the manifest records and feed Table tab:results69 and
+Table tab:extended_predictor of paper_draft.tex.
 
-Why this exists: the results_I{6..11}_n16_hardware.json files
-originally shipped in this package were built before the I6-I9/I10-I11
-tagged re-run (job_manifest/i6_i9_i10_i11_rerun_manifest.json) and
-still contain the earlier, untagged hardware measurements. This script
-rebuilds those files from the manifest alone, so the package's
-hardware-result files match what the manifest actually records (and,
-in turn, what paper_draft.tex currently reports in Table 6
-(tab:results69) and Table 10 (tab:extended_predictor)).
-
-I10 and I11 hardware data exists at p=2 only (that is the only depth
-these two instances were run on hardware for, matching the paper's
-Section 5.5 description of I10/I11 as p=2-only additions to the
-extended predictor set). Each has 4 tagged jobs, not 3: three
-"_rep{1,2,3}" jobs plus one "_disambig" job used to resolve an account
-job-history ambiguity during the audit. Per
-n16_reseed_analysis/final_i10_i11_tagged_results.json, the canonical
-3-repeat statistic uses the "_rep1/2/3" jobs only; "_disambig" is
-retained in the manifest for audit purposes but is not one of the 3
-nominal repeats reported in the paper.
+I10 and I11 hardware data exist at p=2 only (the only depth these two
+instances were run on hardware, matching the paper's description of
+I10/I11 as p=2-only additions to the extended predictor set). Each has
+4 tagged jobs, not 3: three "_rep{1,2,3}" jobs plus one "_disambig" job.
+Per n16_reseed_analysis/final_i10_i11_tagged_results.json, the 3-repeat
+statistic uses the "_rep1/2/3" jobs only; the "_disambig" job is kept in
+the manifest and is not one of the 3 nominal repeats reported in the
+paper.
 
 Usage: run from this directory (n16/analysis/); paths below are
 resolved relative to this script's own location, not the working

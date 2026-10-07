@@ -69,7 +69,7 @@ def main():
     param_dict = {qc.parameters[0]: GAMMA[0], qc.parameters[1]: BETA[0]}
     bound = qc.assign_parameters(param_dict)
 
-    print(f"Connecting to saved Qiskit Runtime account...")
+    print(f"Connecting to the saved Qiskit Runtime configuration...")
     service = QiskitRuntimeService()
     hw_backend = service.backend('ibm_marrakesh')
     status = hw_backend.status()

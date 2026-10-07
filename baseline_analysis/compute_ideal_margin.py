@@ -2,7 +2,7 @@
 For each instance and depth: ideal E[C]/C* (exact Qiskit Statevector) minus the uniform value U.
 Requires qiskit.
 
-Parameter binding follows the original experiment scripts exactly: the circuit is built with
+Parameter binding follows the experiment scripts exactly: the circuit is built with
 ParameterVector('gamma-glyph') and ParameterVector('beta-glyph'), and qc.parameters sorts the beta-glyph
 parameters before the gamma-glyph ones, so the saved opt_gamma values end up on the mixer angles and
 opt_beta on the cost angles. This is consistent between the shipped simulation and hardware runs, and is
@@ -13,7 +13,7 @@ from qiskit import QuantumCircuit
 from qiskit.circuit import ParameterVector
 from qiskit.quantum_info import Statevector
 
-GAMMA, BETA = chr(0x3b3), chr(0x3b2)       # the parameter names used by the original scripts
+GAMMA, BETA = chr(0x3b3), chr(0x3b2)       # the parameter names used by the experiment scripts
 
 
 def build(adj, p):

@@ -1,7 +1,7 @@
 """
 QAOA Repeated Hardware Runs
 ============================
-Runs each of the 5 original n=16 instances 3 times
+Runs each of the 5 founding n=16 instances (I1-I5) 3 times
 on hardware to get mean +/- std confidence intervals
 on the noise-assisted optimization finding.
 

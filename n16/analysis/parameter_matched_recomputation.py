@@ -1,12 +1,12 @@
 """Parameter-matched recomputation of Delta_r_bar and the R-vs-Delta_r_bar correlations (paper Sections 5.4 and 6.2).
 
-Why: the hardware runs for I6-I9 executed the parameters of the ORIGINAL (unseeded, July) optimiser run, but the
-published Sim columns and R come from the SEEDED run. The I5 p=2 hardware runs are stored with an earlier,
-unseeded optimiser run (simulated ratio 0.9557) but the published table pairs them with the seeded value (0.9887).
-This script recomputes each quantity with the simulated ratio of the run whose parameters were actually executed.
+Purpose: the hardware runs for I6-I9 executed the parameters of the unseeded (July) optimiser run, while the
+seeded Sim columns and R come from the seeded run. The I5 p=2 hardware runs are stored with an unseeded
+optimiser run (simulated ratio 0.9557); the seeded pairing uses the seeded value (0.9887).
+This script computes each quantity with the simulated ratio of the run whose parameters were executed.
 
 Inputs (all inside this package):
-  n16/results/original_unseeded/results_I{6-9}_n16_simulate_ORIGINAL.json   (original unseeded simulation)
+  n16/results/original_unseeded/results_I{6-9}_n16_simulate_ORIGINAL.json   (unseeded simulation)
   n16/results/results_I{6-11}_n16_simulate.json                             (seeded simulation)
   n16/results/results_I{6-11}_n16_hardware.json                             (tagged repeated hardware runs)
   n16/results/results_I1_I4_rerun_2026-08-05.json, results_repeated_optionB.json,

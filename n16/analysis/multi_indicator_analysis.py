@@ -3,15 +3,11 @@ Founding-family simulation-ruggedness predictor analysis
 (I1-I5; n=5) reported in Table tab:utility and Section
 sec:disc:noise:i1i5.
 
-This REPLACES the earlier ad hoc computation of
-multi_indicator_analysis_2026-08-05.json, which stored only
-scipy's asymptotic Spearman p-value (spearman_p) for each of the
-three Delta_r_bar definitions (mean/median/best-of-3), with no
-saved generating script and no exact-permutation cross-check.
-That gap became a paper/repo inconsistency once the manuscript
-was revised to report the exact permutation p-value alongside the
-asymptotic one (matching the discipline already used for the
-extended I1/I7/I8/I10/I11 analysis in i1_i6_i11_analysis.py).
+Generates multi_indicator_analysis_2026-08-05.json. For each of the
+three Delta_r_bar definitions (mean/median/best-of-3) it reports the
+exact permutation p-value alongside scipy's asymptotic Spearman
+p-value (spearman_p), matching the extended I1/I7/I8/I10/I11 analysis
+in i1_i6_i11_analysis.py.
 
 Reads directly from source, nothing hardcoded:
   - Sim data (all depths, for R and for Sim p=2):
@@ -19,12 +15,12 @@ Reads directly from source, nothing hardcoded:
     baseline for I1-I5; this is also what R is computed from, per
     README.md). Note this deliberately does NOT use the "sim" field
     embedded in results_repeated_optionB.json for I5, which is
-    stale pre-seed-fix data (I5 sim p=2 = 0.955675 there, vs the
-    seeded/current 0.988689 used in the paper's printed table).
+    data from an unseeded run (I5 sim p=2 = 0.955675 there, vs the
+    seeded 0.988689 used in the paper's printed table).
   - Hardware p=2 data (3 tagged repeats each):
     results_I1_I4_rerun_2026-08-05.json (I1-I4) and
     results_repeated_optionB.json (I5; canonical source per
-    README.md, including its _data_integrity_fix record).
+    README.md).
 
 Reproduces the paper's exact printed numbers for R, Sim p=2, and
 HW p=2 runs for all five instances (Table tab:utility), and for

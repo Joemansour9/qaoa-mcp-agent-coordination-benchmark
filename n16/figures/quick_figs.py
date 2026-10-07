@@ -2,17 +2,16 @@
 Quick Figure Generator — n=16
 ===============================
 Regenerates fig_n16_approx_ratio.png and fig_n16_sim_vs_hw.png directly
-from the verified n=16 SINGLE-RUN results (Table tab:results16). No live
+from the n=16 SINGLE-RUN results (Table tab:results16). No live
 simulation or hardware run needed.
 
 Both figures are explicitly captioned in the paper as "single-run data"
 (see Figure fig:ratio_n16's caption: Sim r=0.967-1.000, HW r=0.974-1.000),
-which is Table tab:results16, NOT the repeated/verified dataset behind
+which is Table tab:results16, NOT the repeated dataset behind
 Table tab:utility. Values below are taken directly from
 n16/results/results_n16_singlerun_depthprofile.json
-and independently cross-checked against every cell of the printed
-tab:results16 table in paper_draft.tex (all 40 sim/hw values, plus
-greedy and optimal_cut, match exactly).
+(all 40 sim/hw values, plus greedy and optimal_cut, as printed in the
+tab:results16 table of paper_draft.tex).
 
 Usage:
   python quick_figs.py
@@ -23,7 +22,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-# ── Known results from the verified n=16 single-run dataset (Table tab:results16) ──
+# ── Results of the n=16 single-run dataset (Table tab:results16) ──
 RESULTS = [
     {'instance': 'I1_full_graph',
      'optimal_cut': 34158.70542921973, 'greedy_cut': 31617.55928042445, 'greedy_ratio': 0.9256076564710338,

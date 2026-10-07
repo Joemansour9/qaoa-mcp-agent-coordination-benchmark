@@ -4,7 +4,7 @@ Restart-noise-floor analysis for the simulation-ruggedness metric R.
 NOT part of the paper -- exploratory data check only.
 
 R = (max_p r_sim - min_p r_sim) / mean_p r_sim is computed from a SINGLE
-COBYLA run per depth (fixed seed for the initial point, x0_seed=0, in
+COBYLA run per depth (set seed for the initial point, x0_seed=0, in
 qaoa_experiment_16.optimize_qaoa). That means R can't distinguish
 "this instance's landscape is genuinely rugged across depth" from
 "COBYLA started from a lucky/unlucky point at one particular depth".
@@ -54,7 +54,7 @@ from qiskit_aer import AerSimulator
 
 N_QUBITS = 16
 P_VALUES = [1, 2, 3, 4]
-RESTART_SEEDS = list(range(1, 31))   # deliberately avoid seed 0 (paper's original x0 seed)
+RESTART_SEEDS = list(range(1, 31))   # deliberately avoid seed 0 (the paper's x0 seed)
 SHOTS = 8192
 MAX_ITER = 200
 SEED_SIMULATOR = 42

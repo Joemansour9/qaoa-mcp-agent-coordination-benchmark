@@ -19,7 +19,7 @@ Task-mix design for I6:
   - ~10-20% of tasks (1 in 10 simple, 1 in 10 medium, 1 in 5 complex)
     are deliberately DATABASE-ISOLATED: they only require
     database_query_db / database_insert_record and no other tool, so
-    Database still appears in the graph but as its own disconnected
+    Database appears in the graph as its own disconnected
     component rather than a hub connected to every other server.
 
 Expected effect on the resulting cost matrix: E_I6 should show ~0
@@ -654,7 +654,7 @@ def run_experiment(n_tasks: int, output_path: str):
 
     all_results = []
     task_id     = 0
-    random.seed(602120)  # fixed seed; only affects WHICH
+    random.seed(602120)  # seed; only affects WHICH
                           # prompt variant is picked within a pool, never
                           # whether a task is DB-isolated (that's fixed above)
     isolated_count_by_tier = {}
