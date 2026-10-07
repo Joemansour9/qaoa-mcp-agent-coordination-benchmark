@@ -51,6 +51,10 @@ I6–I11 (each independently measured).
 | `qaoa_experiment_16_I6_seeded.py`–`_I9_seeded.py` | Same circuit construction and COBYLA protocol (`seed=0`, `seed_simulator=42`, 200 iterations), simulation and single-job hardware execution, for I6–I9. Default `--matrix` and `--output` paths resolve relative to this script's own location, so each runs standalone from inside this folder; running with `--mode simulate` reproduces `results_I6_n16_simulate.json`–`results_I9_n16_simulate.json` exactly. |
 | `qaoa_repeated.py`, `submit_i5_p1_tagged.py`, `i1_i4_rerun_lib.py`, `run_i1_i4_batch.py` | The repeated (3×), individually-tagged hardware-run protocol used for the verified dataset (Section 4.4). |
 
+The n = 8 and n = 16 submission scripts that bind parameters by sorted name list the cost and mixer angles under swapped labels in their saved parameter files; the circuit is unchanged. The retention scripts bind parameters by name.
+
+Some n = 8 and n = 16 submission scripts select the backend with `least_busy(...)`. Every job with a backend record ran on `ibm_marrakesh`.
+
 ### `results/` — Table `tab:results16`, Table `tab:utility`, Table `tab:results69`, Table `tab:extended_predictor`
 
 | File | Backs |
