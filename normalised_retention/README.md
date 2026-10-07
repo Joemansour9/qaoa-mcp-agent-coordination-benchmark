@@ -1,6 +1,6 @@
 # normalised_retention
 
-The two pre-registered hardware studies behind Section 5.5 and Table `tab:retention` of the paper:
+The two pre-specified, hash-locked hardware studies behind Section 5.5 and Table `tab:retention` of the paper:
 retention of the noiseless circuit's expected-cut advantage over a uniform sampler, with max-normalised
 weights and hardware and simulation sharing exactly the same parameters (bound by name).
 
@@ -9,7 +9,7 @@ weights and hardware and simulation sharing exactly the same parameters (bound b
 | `pilot/` | I1, p = 1 and 2, 3 repeats | 6 |
 | `expansion/` | I7, I8, I10, I11, p = 1 and 2, 3 repeats | 24 |
 
-Each folder holds the pre-registration (`PREREGISTRATION.md`), the simulator reference written before any
+Each folder holds the pre-specification document (`PREREGISTRATION.md`; the file name is historical, the paper calls the studies pre-specified because no external registry was used), the simulator reference written before any
 job was submitted (`reference.json`), the frozen analysis script, the submit script, the job manifest (raw
 counts, job IDs, tags, transpiled gate counts) and the frozen analysis output. `expansion/LOCK.json` records
 the sha256 of every locked file, including `PREREGISTRATION.md` and `submit_expansion.py`; the scripts are

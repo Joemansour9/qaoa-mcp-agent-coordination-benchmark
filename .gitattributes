@@ -1,6 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Pre-registered studies are hash-locked: store bytes exactly as hashed (no line-ending conversion)
+# Pre-specified studies are hash-locked: store bytes exactly as hashed (no line-ending conversion)
 normalised_retention/pilot/* -text
 normalised_retention/expansion/* -text

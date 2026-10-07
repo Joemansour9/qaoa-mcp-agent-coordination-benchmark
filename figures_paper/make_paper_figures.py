@@ -129,7 +129,7 @@ def retention_figure(out):
         a.scatter([x], [hw], marker='o', s=26, color=OKABE[4], zorder=4, label='Hardware' if k == 0 else None)
         c = OKABE[1] if pil else OKABE[2]
         b.errorbar([x], [rho], yerr=[[rho - lo], [hi - rho]], fmt='o' if not pil else 's', color=c, capsize=2.5, mfc='none' if pil else c,
-                   label=('I1 pilot' if pil else 'Pre-registered study') if k in (0, 2) else None)
+                   label=('I1 pilot' if pil else 'Second study') if k in (0, 2) else None)
     labels = ['%s\n$p$=%d' % (r[0], r[1]) for r in rows]
     for ax in (a, b):
         ax.set_xticks(pos)

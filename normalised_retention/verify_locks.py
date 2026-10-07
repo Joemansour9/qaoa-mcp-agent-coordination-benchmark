@@ -1,4 +1,4 @@
-"""Check the files of the two pre-registered studies against the sha256 hashes recorded before submission.
+"""Check the files of the two pre-specified studies against the sha256 hashes recorded before submission.
 Pilot hashes: pilot/manifest_pilot.json ('locked_hashes'). Expansion hashes: expansion/LOCK.json ('files').
 Run from this folder:  python verify_locks.py   (files must be byte-exact; see ../.gitattributes)"""
 import hashlib, json, os

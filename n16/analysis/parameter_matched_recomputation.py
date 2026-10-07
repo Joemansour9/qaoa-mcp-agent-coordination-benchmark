@@ -115,3 +115,28 @@ print('I5 p=2: published simulated ratio %.5f ; ratio of the run stored with the
 variant('A as published', S, pub_ref, R_pub)
 variant('B matched delta (I5 only)', S, mat_ref, R_pub)
 variant('C matched delta and R (I5)', S, mat_ref, R_mat)
+
+
+# ---- Censoring-consistent subsets (paper Appendix A, Table tab:extended_predictor) ----------------------------------
+# A cell is censored when its simulated ratio is 1.000 (hardware cannot exceed it). Cells are dropped per pairing.
+# With n = 4 the smallest attainable two-sided exact p is 2/24 = 0.083 (n = 5: 2/120 = 0.017).
+print('\n== Censoring-consistent subsets (cells with simulated ratio 1.000 at p=2 removed for the pairing used)')
+S2 = ['I1', 'I7', 'I8', 'I10', 'I11']
+pub2 = {k: seeded_all[k][2] for k in S2}
+mat2 = dict(pub2, I7=orig['I7'][2], I8=orig['I8'][2])
+Rpub2 = {k: seeded_all[k] for k in S2}
+Rmat2 = dict(Rpub2, I7=orig['I7'], I8=orig['I8'])
+for label, ref, Rs in (('second set, published pairing', pub2, Rpub2), ('second set, matched delta', mat2, Rpub2), ('second set, matched delta and R', mat2, Rmat2)):
+    keep = [k for k in S2 if ref[k] < CEIL]
+    print('  kept %s (n=%d)' % (keep, len(keep)))
+    variant(label, keep, ref, Rs)
+S1 = ['I1', 'I2', 'I3', 'I4', 'I5']
+pub1 = {k: seeded_all[k][2] for k in S1}
+mat1 = dict(pub1, I5=i5['sim']['2'])
+Rpub1 = {k: seeded_all[k] for k in S1}
+Rmat1 = dict(Rpub1, I5={int(p): v for p, v in i5['sim'].items()})
+print('  I1-I5 simulated ratio at p=2 (published):', {k: round(v, 4) for k, v in pub1.items()})
+for label, ref, Rs in (('I1-I5, published pairing', pub1, Rpub1), ('I1-I5, matched delta and R', mat1, Rmat1)):
+    keep = [k for k in S1 if ref[k] < CEIL]
+    print('  kept %s (n=%d)' % (keep, len(keep)))
+    variant(label, keep, ref, Rs)

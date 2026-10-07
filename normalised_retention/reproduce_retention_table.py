@@ -3,7 +3,7 @@ Needs only numpy and pandas (no IBM access). Reads:
   pilot/manifest_pilot.json, pilot/reference.json            (I1 pilot)
   expansion/manifest_expansion.json, expansion/reference.json (I7, I8, I10, I11)
   ../n16/cost_matrices/                                        (cost matrices, max-normalised here)
-and checks the recomputed retention against the frozen pre-registered analysis outputs
+and checks the recomputed retention against the frozen analysis outputs
 (pilot/pilot_results.json, expansion/expansion_results.json). Prints the table rows."""
 import os, json
 import numpy as np
@@ -74,4 +74,4 @@ for sub, man, res, insts in studies:
 print('\n'.join(rows))
 print('max |recomputed rho - frozen analysis rho| = %.2e' % worst)
 assert worst < 1e-9, 'retention does not match the frozen analysis'
-print('OK: recomputed retention matches the pre-registered analysis outputs')
+print('OK: recomputed retention matches the frozen analysis outputs')
