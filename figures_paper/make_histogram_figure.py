@@ -36,8 +36,10 @@ print('I1 optimal bitstrings %s with counts %s (uniform expectation %.0f)' % (op
 print('E[C]/C*: hardware %.4f, uniform %.4f (I1)' % (sum(cnt[b] * cv[b] for b in allb) / 8192 / opt, np.mean(list(cv.values())) / opt))
 
 fig, ax = plt.subplots(figsize=(6.9, 2.5))
-colors = ['#D55E00' if b in optb else '#0072B2' for b in allb]
+colors = ['#D55E00' if b in optb else '#56B4E9' for b in allb]   # darker bars for the optimal strings (distinct in greyscale)
 ax.bar(range(256), y, width=0.85, color=colors, linewidth=0)
+opt_idx = [allb.index(b) for b in optb]
+ax.plot(opt_idx, [y[i] + 0.04 * y.max() for i in opt_idx], 'v', color='k', ms=4, zorder=5)   # triangle marker as well as colour
 ax.axhline(8192 / 256, color='k', ls='--', lw=0.8)
 ax.text(255, 108, 'dashed line: uniform expectation (32)', ha='right', va='bottom', fontsize=7, bbox=dict(fc='w', ec='none', pad=1.5))
 ax.set_xlim(-1, 256)
