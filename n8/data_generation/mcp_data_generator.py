@@ -13,8 +13,9 @@ Design:
   - Captures: tokens per tool call, latency per server, tool-to-tool transitions
   - Output: cost matrix CSV + raw interaction log
 
-MCP Servers simulated (no real MCP server needed — we simulate tool calls
-via function calling, which produces identical token/latency measurements):
+MCP Servers simulated (no real MCP server is used). The agent uses OpenAI function
+calling as a proxy for native MCP tool execution; the token and latency figures come
+from function calling, not from native MCP servers:
   Server A — FileSystem:  [read_file, write_file]
   Server B — WebSearch:   [search_web, fetch_url]
   Server C — Database:    [query_db, insert_record]
